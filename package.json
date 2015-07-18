@@ -1,0 +1,11 @@
+{
+  "name": "Minetest",
+  "version": "0.1.0",
+  "author": "Calinou",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-stylus": "*",
+    "grunt-contrib-watch": "*"
+  }
+}
