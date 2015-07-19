@@ -1,0 +1,32 @@
+// content.styl: Content margins and link styling
+
+.content
+  margin 0 20%
+
+  a
+    color hsl(100, 35%, 45%)
+    border-bottom 1px solid hsl(100, 35%, 45%)
+    transition .15s
+
+    &:hover,
+    &:focus
+      color hsl(100, 35%, 35%)
+      border-bottom 1px solid hsl(100, 35%, 35%)
+      text-decoration none
+
+    &:active
+      color hsl(100, 35%, 25%)
+      border-bottom 1px solid hsl(100, 35%, 25%)
+
+
+@media (max-width 992px)
+  .content
+    margin 0 10%
+
+@media (max-width 768px)
+  .content
+    margin 0 5%
+
+@media (max-width 480px)
+  .content
+    margin 0 2%

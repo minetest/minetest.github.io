@@ -3,6 +3,14 @@ mwc
 
 Minetest Website Competition entry
 
+Features
+========
+
+* Uses Bootstrap 3.3.5, jQuery 2.1.4.
+* Smooth scrolling to sections.
+* Dynamic "back to top" button.
+* Resposnive site and favicon.
+
 Workflow
 ========
 

@@ -1,4 +1,10 @@
-@import "fonts"
+// main.styl: Global styles
+
+@import "fonts"     // Fonts (currently Titillium Web)
+@import "navbar"    // Navigation bar
+@import "content"   // Content margins
+@import "jumbotron" // Jumbotron
+@import "footer"    // Footer (copyright information, link to GitHub)
 
 ::-moz-selection
   background-color hsl(100, 35%, 45%)
@@ -10,75 +16,50 @@
 
 body
   background-color #f2f2f2
+  color #333
   cursor default
   font-family "Titillium Web Regular", sans-serif
 
 p, li
-  font-size 1.6rem
+  font-size 1.7rem
 
 h1
-  font-weight bold
+  font-weight 700
   font-size 5rem
+  margin 9rem 0 4.5rem 0
+  text-align center
 
 h2
-  font-weight bold
-  text-transform uppercase
-  font-size 2rem
+  font-size 3rem
+  margin 6rem 0 3rem 0
+  text-align center
 
 h3
   font-size 3rem
 
-footer
-  background-color hsl(0, 0%, 20%)
-  color hsl(0, 0%, 60%)
+h4
+  margin 3rem 0 1.5rem 0
+  font-size 2.25rem
+
+pre,
+code
+  background-color #e2e2e2
+  border 1px solid #ccc
+  color #333
+
+.intro
+  margin-top 5rem
+  font-size 1.8rem
   text-align center
-  padding 3rem 0
-  margin-top 3rem
-
-.content
-  margin 0 20%
-
-  a
-    color hsl(100, 35%, 45%)
-    border-bottom 1px solid hsl(100, 35%, 45%)
-    transition .15s
-
-    &:hover,
-    &:focus
-      color hsl(100, 35%, 35%)
-      border-bottom 1px solid hsl(100, 35%, 35%)
-      text-decoration none
-
-    &:active
-      color hsl(100, 35%, 25%)
-      border-bottom 1px solid hsl(100, 35%, 25%)
-
-.jumbotron
-  background-image url("../media/background.png")
-  background-attachment fixed
-  background-size cover
-  border-radius 0 !important
-  color #fff
-  padding-top 25vh
-  margin 0 -15px !important
-  height 100vh
-
-  .btn
-    margin 4rem 4rem 0 4rem
-    font-size 2rem
-    transition .15s
 
 .center
   text-align center
 
-@media (max-width 992px)
-  .content
-    margin 0 10%
+.line
+  background-color #bbb
+  height 1px
+  margin 4rem 0
+  width 100%
 
-@media (max-width 768px)
-  .content
-    margin 0 5%
-
-@media (max-width 480px)
-  .content
-    margin 0 2%
+.inline
+  display inline
