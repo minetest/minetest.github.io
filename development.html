@@ -1,0 +1,197 @@
+---
+title: Development - Minetest
+---
+
+{% include header.html %}
+
+<div class="jumbotron reduced development">
+  <div class="center">
+    <h1>Development</h1>
+  </div>
+</div>
+
+<div class="content">
+  <h1>Overview</h1>
+
+  <h2>Getting into development</h2>
+
+  <p>
+  There are several ways to get into development:
+  </p>
+
+  <ul>
+    <li><strong>Modding:</strong> Develop a mod independently and publish it on the <a href="http://forum.minetest.net/">forums</a>.</li>
+    <li><strong>Core development:</strong> Think or ask of something that is needed in the core, talk with the core team (preferably a lot, with multiple members - communication is more important than you think) and do it.</li>
+    <li><strong>Translating:</strong> Help translating Minetest at <del><a href="http://translate.minetest.ru/projects/minetest/core/">our web interface</a> (oops, seems to be down (2014-06-04))</del>. If your language does not exist yet, contact a core dev.</li>
+  </ul>
+
+  <h2>Core Team</h2>
+
+  <p>
+    Upstream repositories and official Windows packages are handled by the <a href="https://github.com/minetest?tab=members">core team</a>, consisting of a bunch of people who are much trusted to keep Minetest progressing in good condition. The core team is best contacted on <abbr title="Internet Relay Chat">IRC</abbr> at <code>#minetest-dev @ chat.freenode.net</code>.
+  </p>
+
+  <p>
+    The core team is formed of people who have made great <a href="/contributors" class="wikilink1" title="contributors">contributions</a> to Minetest.
+  </p>
+
+  <p>
+    Contributions are approved if two members of the core team agree on them.
+  </p>
+
+  <h2 class="sectionedit3" id="project_structure">Project Structure</h2>
+  <div class="level2">
+
+  <p>
+  Minetest is distributed as an engine, combined with a couple of games. Upstream repositories can be found at <a href="https://github.com/minetest/" title="https://github.com/minetest/">https://github.com/minetest/</a>.
+  </p>
+  <ul>
+  <li><div> <strong>The engine</strong> (core) is the base for everything. C++ is used for housekeeping and performance-critical stuff, Lua for extensible things.</div>
+  </li>
+  <li><div> <strong>Games</strong> define game content: nodes, entities, textures, meshes, sounds and custom behavior implemented in Lua. Games consist of mods that plug into the engine using the <a href="http://dev.minetest.net" title="http://dev.minetest.net">Modding API</a>.</div>
+  </li>
+  </ul>
+
+  <p>
+    For more information see the <a href="http://dev.minetest.net/Terminology">terminology</a> or <a href="http://dev.minetest.net/Engine_structure">engine structure</a> developer wiki pages.
+  </p>
+
+  </div>
+
+  <h2>Rules</h2>
+
+  <p>
+  <a href="http://dev.minetest.net/All_rules_regarding_to_development" title="http://dev.minetest.net/All_rules_regarding_to_development">http://dev.minetest.net/All_rules_regarding_to_development</a>
+  </p>
+
+  <h1 id="reporting-issues">Reporting issues</h1>
+
+  <p>
+    Different things related to Minetest are maintained by different people, contacted in different ways. Here you can find where to report issues, bugs and any other kinds of problems regarding to each “product”.
+  </p>
+
+  <p>
+    People are generally available on freenode <abbr title="Internet Relay Chat">IRC</abbr>, the Minetest Forums, GitHub and/or via email.
+  </p>
+
+  <h2>Programs</h2>
+
+  <h3>Minetest ("Minetest Engine")</h3>
+  <ul>
+    <li><a href="https://github.com/minetest/minetest/issues" title="https://github.com/minetest/minetest/issues">https://github.com/minetest/minetest/issues</a></li>
+  </ul>
+
+  <h3>Minetest Game ("Vanilla")</h3>
+  <ul>
+    <li><a href="https://github.com/minetest/minetest_game/issues">https://github.com/minetest/minetest_game/issues</a></li>
+  </ul>
+
+  <h3>Minetest Mapper</h3>
+  <ul>
+    <li><a href="https://github.com/minetest/minetestmapper">https://github.com/minetest/minetestmapper</a></li>
+  </ul>
+
+  <h2>Services</h2>
+
+  <h3>*.minetest.net</h3>
+  <ul>
+    <li><abbr title="Domain Name System">DNS</abbr>: celeron55</li>
+    <li>Approval of hosting things: celeron55</li>
+  </ul>
+
+  <h3>www.minetest.net</h3>
+  <ul>
+    <li>Hosting: celeron55</li>
+    <li>Content: celeron55 and <a href="community.html">http://www.minetest.net/community</a></li>
+    <li>Theme: <a href="https://github.com/celeron55/minetest.net_dokutemplate3/issues">https://github.com/celeron55/minetest.net_dokutemplate3/issues</a></li>
+  </ul>
+
+  <h3>forum.minetest.net</h3>
+  <ul>
+    <li>Hosting: celeron55</li>
+    <li>Theme: <a href="https://github.com/minetest/forum.minetest.net_template1/issues">https://github.com/minetest/forum.minetest.net_template1/issues</a></li>
+    <li>Content: Moderators on the forum. Use “Report this post” where possible.</li>
+  </ul>
+
+  <h3>servers.minetest.net</h3>
+  <ul>
+    <li>Hosting: sfan5</li>
+    <li>Server program: <a href="https://github.com/minetest/master-server">https://github.com/minetest/master-server</a></li>
+  </ul>
+
+  <h3 class="sectionedit10" id="google_playnetminetestminetest">Google Play: <code>net.minetest.minetest</code></h3>
+  <ul>
+    <li>(<a href="https://play.google.com/store/apps/details?id=net.minetest.minetest">https://play.google.com/store/apps/details?id=net.minetest.minetest</a>)</li>
+    <li>Maintainer: nerzhul aka. nrzkt</li>
+  </ul>
+
+  <h1 id="donate">Donate</h1>
+
+  <p>
+    If you want to monetarily support Minetest, here's what you can do:
+  </p>
+
+  <h2>Tip celeron55</h2>
+
+  <p>
+    You can tip money to celeron55, to be mostly used for hosting of websites and overall maintenance effort on the project.
+  </p>
+
+  <p>
+
+  <div style="text-align: center;">
+    <div style="display: inline-block; width: 300px;">
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="9MKR3HL26KKSJ">
+        <table style="width: 500px;">
+          <tr><td><input type="hidden" name="on0" value="Tip celeron55's Minetest efforts">Tip celeron55's Minetest efforts</td></tr><tr><td><select name="os0">
+          	<option value="Small tip">Small tip €2.00 EUR</option>
+          	<option value="Larger tip">Larger tip €5.00 EUR</option>
+          	<option value="A plentiful tip">A plentiful tip €12.00 EUR</option>
+          	<option value="This surely is enough, right?">This surely is enough, right? €42.00 EUR</option>
+          	<option value="No?">No? €75.00 EUR</option>
+          	<option value="Yes?">Yes? €150.00 EUR</option>
+          	<option value="ALL THE MONEY">ALL THE MONEY €500.00 EUR</option>
+          </select> </td></tr>
+        </table>
+        <input type="hidden" name="currency_code" value="EUR">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      </form>
+    </div>
+  </div>
+
+  </p>
+
+  <p>
+    <strong>PayPal address:</strong> celeron55@gmail.com (Please note in the message that you&#039;re supporting Minetest in particular.)
+  </p>
+
+  <h2>Other</h2>
+
+  <p>
+    Your favourite server or modder might accept tips too; make sure to check those out.
+  </p>
+
+  <h2>Buy merchandise</h2>
+
+  <p>
+    You can buy coffee cups, shirts and stuff like that at <a href="http://www.cafepress.co.uk/profile/minetest" title="http://www.cafepress.co.uk/profile/minetest">http://www.cafepress.co.uk/profile/minetest</a>
+  </p>
+
+  <p>
+    Note: Make sure the quality is right before buying; the things on offer have not been checked by anyone in particular.
+  </p>
+
+  <p>
+    Profits are used as donations for something related to Minetest. <a href="http://forum.minetest.net/viewtopic.php?id=4437" title="http://forum.minetest.net/viewtopic.php?id=4437">Forum thread</a>.
+  </p>
+
+  <br>
+
+  <p>
+    <a class="thumbnail no-border" href="http://www.cafepress.co.uk/profile/minetest"><img src="http://www.minetest.net/_media/need_some_coffee_mug_trans.png" alt="" width="200"></a>
+  </p>
+</div>
+
+{% include footer.html %}
