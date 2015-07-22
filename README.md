@@ -7,6 +7,7 @@ Features
 ========
 
 * Uses Bootstrap 3.3.5, jQuery 2.1.4.
+* Uses FastClick for removing tap delay on mobile devices.
 * Smooth scrolling to sections.
 * Dynamic "back to top" button.
 * Resposnive site and favicon.
