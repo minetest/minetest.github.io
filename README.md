@@ -5,6 +5,7 @@ The official Minetest website, living at [minetest.net](http://minetest.net).
 # Features
 
 * Uses Bootstrap 3.3.5 and jQuery 2.1.4.
+* Uses modern Web design techniques: `rem` units, `hsl` colors.
 * Uses FastClick for removing tap delay on mobile devices.
 * Smooth scrolling to sections.
 * Dynamic "back to top" button.
