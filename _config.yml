@@ -1,3 +1,9 @@
 permalink: /:title.html
 gems:
   - jekyll-redirect-from
+exclude:
+  - Gruntfile.js
+  - CNAME
+  - README.md
+  - LICENSE.md
+  - package.json
