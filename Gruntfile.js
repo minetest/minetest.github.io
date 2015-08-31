@@ -2,11 +2,11 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     watch: {
-      files: ["css/stylus/*.styl"],
+      files: ["assets/css/stylus/*.styl"],
       tasks: ["stylus"]
     },
     stylus: {
-      "css/main.min.css": ["css/stylus/*.styl"],
+      "assets/css/main.min.css": ["assets/css/stylus/*.styl"],
       options: {
         globals: {
           compress: true
