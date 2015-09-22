@@ -9,7 +9,7 @@ The official Minetest website, living at [minetest.net](http://minetest.net).
 * Uses FastClick for removing tap delay on mobile devices.
 * Smooth scrolling to sections.
 * Dynamic "back to top" button.
-* Resposnive site and favicon.
+* Responsive site and favicon.
 
 # Workflow
 
