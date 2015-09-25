@@ -1,0 +1,26 @@
+// Footer
+
+footer {
+	background-color: hsl(0, 0, 18%);
+	color: hsl(0, 0, 60%);
+	text-align: center;
+	padding: 3rem 0;
+	margin-top: 3rem;
+
+	a {
+		color: hsl(0, 0, 90%);
+		text-decoration: none;
+		transition: .15s;
+
+		&:hover,
+		&:focus {
+			color: hsl(0, 0, 80%);
+			text-decoration: underline;
+		}
+
+		&:active {
+			color: hsl(0, 0, 50%);
+			text-decoration: underline;
+		}
+	}
+}

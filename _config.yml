@@ -1,9 +1,9 @@
 permalink: pretty
 gems:
   - jekyll-redirect-from
+sass:
+  style: compressed
 exclude:
-  - Gruntfile.js
   - CNAME
   - README.md
   - LICENSE.md
-  - package.json
