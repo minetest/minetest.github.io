@@ -1,0 +1,49 @@
+// jumbotron.styl: Jumbotron
+
+.jumbotron {
+	background-image: url("../../media/background-home.jpg");
+	background-size: cover;
+	border-radius: 0 !important;
+	color: #fff;
+	padding-top: 25vh;
+	margin: 0 -15px !important;
+	height: 100vh;
+	min-height: 60rem;
+	text-shadow: 0 0 .5rem #000;
+
+	.btn {
+		margin: 4rem 4rem 0 4rem;
+		font-size: 2rem;
+		transition: .15s;
+	}
+
+	&.reduced {
+		padding-top: 5rem;
+		height: 25vh;
+		min-height: 30rem;
+	}
+
+	&.downloads {
+		background-image: url("../../media/background-downloads.jpg");
+	}
+
+	&.community {
+		background-image: url("../../media/gallery/1.jpg");
+	}
+
+	&.credits {
+		background-image: url("../../media/gallery/2.jpg");
+	}
+
+	&.customize {
+		background-image: url("../../media/gallery/3.jpg");
+	}
+
+	&.irc {
+		background-image: url("../../media/gallery/4.jpg");
+	}
+
+	&.development {
+		background-image: url("../../media/gallery/5.jpg");
+	}
+}

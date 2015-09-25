@@ -1,0 +1,32 @@
+// Content margins and link styling
+
+.content {
+	margin: 0 20%;
+
+	a {
+		color: hsl(100, 40%, 40%);
+		text-decoration: none;
+		transition: .15s;
+
+		&:hover,
+		&:focus {
+			color: hsl(100, 30%, 30%);
+			text-decoration: underline;
+		}
+		&:active {
+			color: hsl(0, 0, 0);
+		}
+	}
+}
+
+@media (max-width 992px) {
+	.content { margin: 0 10%; }
+}
+
+@media (max-width 768px) {
+	.content { margin: 0 5%; }
+}
+
+@media (max-width 480px) {
+	.content { margin: 0 2%; }
+}
