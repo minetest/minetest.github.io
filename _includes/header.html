@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} - Minetest</title>
     <link rel="stylesheet" href="/lib/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/main.min.css">
+    <script>
+      Origami.fastclick(document.body); // FastClick
+      $(document).ready(function() {
+        $("a").smoothScroll();  // jQuery Smooth Scroll
+        $.goup();               // jQuery GoUp
+      });
+    </script>
 
     <link rel="apple-touch-icon" sizes="57x57" href="/media/favicon/57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/media/favicon/60x60.png">
@@ -53,7 +59,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="//minetest.net">
-            <img alt="Minetest" src="/media/favicon/96x96.png" style="height: 260%;">
+            <img alt="Minetest" src="/media/icon.svg" style="height: 5rem;">
           </a>
           <a class="navbar-brand" href="//www.minetest.net">
             Minetest
