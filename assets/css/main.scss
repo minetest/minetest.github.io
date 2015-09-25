@@ -1,0 +1,82 @@
+---
+# This ensures thet Jekyll reads this file
+---
+// Global stytes
+
+@import "fonts";     // Fonts (currently Titillium Web)
+@import "navbar";    // Navigation bar
+@import "content";   // Content margins
+@import "jumbotron"; // Jumbotron
+@import "footer";    // Footer (copyright information, link to GitHub)
+
+::-moz-selection {
+	background-color: hsl(100, 35%, 45%);
+	color: hsl(0, 0%, 100%);
+}
+
+::selection {
+	background-color: hsl(100, 35%, 45%);
+	color: hsl(0, 0%, 100%);
+}
+
+body {
+	background-color: #f2f2f2;
+	color: #333;
+	cursor: default;
+	font-family: "Titillium Web Regular", sans-serif;
+}
+
+p, li {
+	font-size: 1.7rem;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 5rem;
+	margin: 9rem 0 4.5rem 0;
+	text-align: center;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 3rem;
+	margin: 6rem 0 3rem 0;
+}
+
+h3 {
+	font-size: 2.6rem;
+	margin: 5rem 0 2.5rem 0;
+}
+
+h4 {
+	margin: 3rem 0 1.5rem 0;
+	font-size: 2.2rem;
+}
+
+pre,
+code {
+	background-color: #e2e2e2;
+	border: 1px solid #ccc;
+	color: #333;
+}
+
+.intro {
+	margin-top: 5rem;
+	font-size: 1.8rem;
+	text-align: center;
+}
+
+.center {
+	text-align: center;
+}
+
+.line {
+	background-color: #bbb;
+	height: 1px;
+	margin: 4rem 0;
+	width: 100%;
+}
+
+.inline {
+	display: inline;
+}

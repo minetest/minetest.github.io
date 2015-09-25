@@ -1,0 +1,31 @@
+// Fonts
+
+@font-face {
+	font-family: "Titillium Web Regular";
+	font-weight: 500;
+	src: local("Titillium Web Regular"),
+	     url("../fonts/titilliumweb/TitilliumWeb-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Titillium Web Italic";
+	font-style: "italic";
+	font-weight: 500;
+	src: local("Titillium Web Italic"),
+	     url("../fonts/titilliumweb/TitilliumWeb-Italic.ttf");
+}
+
+@font-face {
+	font-family: "Titillium Web Bold";
+	font-weight: 700;
+	src: local("Titillium Web Bold"),
+	     url("../fonts/titilliumweb/TitilliumWeb-Bold.ttf");
+}
+
+@font-face {
+	font-family: "Titillium Web Bold Italic";
+	font-style: "italic";
+	font-weight: 700;
+	src: local("Titillium Web Bold Italic"),
+	     url("../fonts/titilliumweb/TitilliumWeb-BoldItalic.ttf");
+}
