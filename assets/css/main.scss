@@ -80,9 +80,9 @@ code {
 .inline {
 	display: inline;
 }
-:target:before {
+:target:before {  // Adjust anchor link location to no cover titles with header
   content: "";
   display: block;
-  height: 60px; /* fixed header height*/
-  margin: -60px 0 0; /* negative fixed header height */
+  height: 60px; 
+  margin: -60px 0 0;
 }
