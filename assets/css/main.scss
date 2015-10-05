@@ -80,7 +80,7 @@ code {
 .inline {
 	display: inline;
 }
-:target:before {  // Adjust anchor link location to no cover titles with header
+:target:before {  // Adjust anchor link location to not cover titles with header
   content: "";
   display: block;
   height: 60px; 
