@@ -13,7 +13,7 @@ The official Minetest website, living at [www.minetest.net](http://www.minetest.
 
 # Workflow
 
-This site uses the [Jekyll](http://jekyllrb.com) static site generator.
+This site uses the [Jekyll](https://jekyllrb.com) static site generator.
 Use `jekyll serve` to automatically build the Jekyll site and serve it locally.
 
 # License
