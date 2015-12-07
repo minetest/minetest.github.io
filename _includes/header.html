@@ -7,13 +7,6 @@
     <title>{{ page.title }} - Minetest</title>
     <link rel="stylesheet" href="/lib/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <script>
-      Origami.fastclick(document.body); // FastClick
-      $(document).ready(function() {
-        $("a").smoothScroll();  // jQuery Smooth Scroll
-        $.goup();               // jQuery GoUp
-      });
-    </script>
 
     <link rel="apple-touch-icon" sizes="57x57" href="/media/favicon/57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/media/favicon/60x60.png">
@@ -44,6 +37,12 @@
         var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0];
         g.type="text/javascript"; g.async=true; g.defer=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
       })();
+
+      Origami.fastclick(document.body); // FastClick
+      $(document).ready(function() {
+        $("a").smoothScroll();  // jQuery Smooth Scroll
+        $.goup();               // jQuery GoUp
+      });
     </script>
     <noscript><p><img src="//inchra-stats.minetest.net/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
   </head>
