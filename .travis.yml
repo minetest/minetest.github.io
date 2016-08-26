@@ -1,0 +1,11 @@
+language: ruby
+rvm:
+  - 2.2
+sudo: false
+script:
+  - bundle exec jekyll build
+  - bundle exec htmlproofer '_site/' --allow-hash-href --check-html
+
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
