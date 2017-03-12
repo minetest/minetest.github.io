@@ -30,3 +30,19 @@
 @media (max-width 480px) {
 	.content { margin: 0 2%; }
 }
+
+#download-btn {
+	display: none;
+}
+
+#download-btn a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 10px 30px;
+}
+
+#download-btn a small {
+	display: block;
+	font-weight: normal;
+}

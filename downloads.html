@@ -8,6 +8,52 @@ redirect_from:
   - /downloads.php
   - /old_releases/
   - /other_distros/
+version: 0.4.15
+downloads:
+    windows:
+        os: Windows
+        title: portable, 64-bit
+        url: https://github.com/minetest/minetest/releases/download/0.4.15/minetest-0.4.15-win64.zip
+    mac:
+        os: OS X
+        title: Stable OS X Builds
+        url: https://forum.minetest.net/viewtopic.php?t=9190
+    ubuntu:
+        os: Ubuntu
+        title: search for .deb
+        url: http://packages.ubuntu.com/search?keywords=minetest
+    linux mint:
+        os: Linux Mint
+        title: Launchpad
+        url: https://launchpad.net/~minetestdevs/+archive/ubuntu/stable
+    debian:
+        os: Debian
+        title: search for .deb
+        url: https://packages.debian.org/search?keywords=minetest
+    fedora:
+        os: Fedora
+        title: app page
+        url: https://apps.fedoraproject.org/packages/minetest
+    opensuse:
+        os: openSUSE
+        title: app page
+        url: https://software.opensuse.org/package/minetest
+    mageia:
+        os: Mageia
+        title: app page
+        url: https://madb.mageia.org/package/show/name/minetest
+    arch:
+        os: Arch Linux
+        title: search
+        url: https://www.archlinux.org/packages/?q=minetest
+    gentoo:
+        os: Gentoo
+        title: app page
+        url: https://packages.gentoo.org/package/games-action/minetest
+    voidlinux:
+        os: VoidLinux
+        title: srcpkg
+        url: https://github.com/voidlinux/void-packages/tree/master/srcpkgs/minetest
 ---
 
 <p class="intro">
@@ -15,6 +61,45 @@ redirect_from:
   Are you a new user?<br>
   Have a look at our <a href="//wiki.minetest.net/Getting_Started">Getting Started</a>, <a href="//wiki.minetest.net/FAQ">FAQ</a> and <a href="//wiki.minetest.net/Tutorials">Tutorials</a> pages on our wiki.
 </p>
+
+<div class="intro" id="download-btn">
+    <a class="btn btn-success btn-lg" role="button">
+        Download Minetest {{ page.version }}
+
+        <small>awaiting content</small>
+    </a>
+
+    <p>
+        <small>scroll down for more versions</small>
+    </p>
+</div>
+
+<script>
+    function detectPlatformName() {
+        var userAgent = navigator.userAgent.toLowerCase();
+        var platforms = ["windows", "mac", "ubuntu", "linux mint", "fedora", "opensuse",
+                "mageia", "gentoo", "voidlinux", "debian", "arch"];
+
+        for (var i = 0; i < platforms.length; i++) {
+            if (userAgent.indexOf(platforms[i]) >= 0) {
+                return platforms[i];
+            }
+        }
+        return null;
+    }
+
+    function setupDownloadBtn() {
+        var versions = {{ page.downloads | replace:'=>',':' }};
+        var data = versions[detectPlatformName()];
+        if (data) {
+            $("#download-btn").show();
+            $("#download-btn a").attr("href", data.url);
+            $("#download-btn a small").text("For " + data.os + " (" + data.title + ")");
+        }
+    }
+
+    window.onload = setupDownloadBtn;
+</script>
 
 <p class="intro">
   You may also want to look at some <a href="https://forum.minetest.net/viewforum.php?f=15">subgames</a>. Subgames form a foundation for the game using Lua scripts. Different subgames have different objectives, such as survival, building or Player vs Player.
@@ -32,7 +117,7 @@ redirect_from:
 <p>Works on Windows XP, Vista, 7, 8, 8.1 and 10.</p>
 
 <ul>
-  <li><a href="https://github.com/minetest/minetest/releases/download/0.4.15/minetest-0.4.15-win64.zip">Minetest 0.4.15 (portable, 64-bit)</a></li>
+  <li><a href="{{ page.downloads.windows.url }}">Minetest {{ page.version }} ({{ page.downloads.windows.title }})</a></li>
   <li><a href="https://github.com/minetest/minetest/releases/download/0.4.15/minetest-0.4.15-win32.zip">Minetest 0.4.15 (portable, 32-bit)</a></li>
 </ul>
 
@@ -52,7 +137,7 @@ redirect_from:
 <p>OS X 10.8 or later is recommended.</p>
 
 <ul>
-  <li><a href="https://forum.minetest.net/viewtopic.php?t=9190">Stable OS X builds</a></li>
+  <li><a href="{{ page.downloads.mac.url }}">{{ page.downloads.mac.title }}</a></li>
   <li>Using <a href="http://brew.sh/">Homebrew</a>? <code>brew install homebrew/games/minetest</code></li>
 </ul>
 
@@ -64,15 +149,15 @@ redirect_from:
 <p>Those may be out of date at times. If they are too out of date, you can build from source.</p>
 
 <ul>
-  <li><a href="https://packages.debian.org/search?keywords=minetest">Debian</a></li>
-  <li><a href="http://packages.ubuntu.com/search?keywords=minetest">Ubuntu</a></li>
-  <li><a href="https://launchpad.net/~minetestdevs/+archive/ubuntu/stable">Ubuntu / Linux Mint (PPA)</a></li>
-  <li><a href="https://apps.fedoraproject.org/packages/minetest">Fedora</a></li>
-  <li><a href="https://software.opensuse.org/package/minetest">openSUSE</a></li>
-  <li><a href="https://madb.mageia.org/package/show/name/minetest">Mageia</a></li>
-  <li><a href="https://www.archlinux.org/packages/?q=minetest">Arch Linux</a></li>
-  <li><a href="https://packages.gentoo.org/package/games-action/minetest">Gentoo</a></li>
-  <li><a href="https://github.com/voidlinux/void-packages/tree/master/srcpkgs/minetest">VoidLinux</a></li>
+  <li><a href="{{ page.downloads.debian.url }}">Debian</a></li>
+  <li><a href="{{ page.downloads.ubuntu.url }}">Ubuntu</a></li>
+  <li><a href="{{ page.downloads['linux mint'].url }}">Ubuntu / Linux Mint (PPA)</a></li>
+  <li><a href="{{ page.downloads.fedora.url }}">Fedora</a></li>
+  <li><a href="{{ page.downloads.opensuse.url }}">openSUSE</a></li>
+  <li><a href="{{ page.downloads.mageia.url }}">Mageia</a></li>
+  <li><a href="{{ page.downloads.arch.url }}">Arch Linux</a></li>
+  <li><a href="{{ page.downloads.gentoo.url }}">Gentoo</a></li>
+  <li><a href="{{ page.downloads.voidlinux.url }}">VoidLinux</a></li>
 </ul>
 
 <h4>Packages (daily, unstable)</h4>
