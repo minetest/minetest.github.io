@@ -4,7 +4,7 @@ rvm:
 sudo: false
 script:
   - bundle exec jekyll build
-  - bundle exec htmlproofer '_site/' --allow-hash-href --check-html
+  - bundle exec htmlproofer '_site/' --allow-hash-href --check-html --http-status-ignore 0
 
 env:
   global:
