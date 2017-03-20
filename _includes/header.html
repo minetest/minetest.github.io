@@ -43,11 +43,26 @@
         $("a").smoothScroll();  // jQuery Smooth Scroll
         $.goup();               // jQuery GoUp
       });
+      function translate(src) {
+        var text=src;
+        var lang=(navigator.browserLanguage || navigator.language).toLowerCase();
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", "locale/"+lang+".txt", false);
+        xmlhttp.send();
+        var lines=xmlhttp.responseText.split("\n");
+        for(var i=0;i<lines.length;i++) {
+          var line=lines[i].split(":=",2);
+          if(line.length!=2)continue;
+          text=text.replace(line[0],line[1]);
+        }
+        return text;
+      }
     </script>
   </head>
 
   <body>
     <noscript><p><img src="//stats.minetest.net/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+    <div id="translate">
     <div id="top"></div>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
