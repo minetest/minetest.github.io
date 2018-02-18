@@ -10,16 +10,15 @@ redirect_from:
   - /other_distros/
 ---
 
-<p class="intro">
-  <strong>Thank you for trying out Minetest.</strong><br>
-  Are you a new user?<br/>
+
+<h2>Thank you for trying out Minetest</h2>
+
+<p>
+  Are you a new user?
   Have a look at our <a href="//wiki.minetest.net/Getting_Started">Getting Started</a>,
   <a href="//wiki.minetest.net/FAQ">FAQ</a> and <a href="//wiki.minetest.net/Tutorials">Tutorials</a> pages on our wiki.<br>
   Otherwise, feel free to look at the <a href="http://dev.minetest.net/Changelog#0.4.15_.E2.86.92_0.4.16">changelog.</a>
 </p>
-
-
-<h2>Make sure to get content</h2>
 
 <p>
   You may also want to look at some <a href="https://forum.minetest.net/viewforum.php?f=15">subgames</a>. Subgames form a foundation for the game using Lua scripts. Different subgames have different objectives, such as survival, building or Player vs Player.
@@ -75,7 +74,7 @@ redirect_from:
 
 <div class="row">
   <div class="col-sm-6">
-    <h2>Linux</h2>
+    <h2><small>GNU/</small>Linux</h2>
 
     <h4>Packages (stable)</h4>
 
@@ -103,21 +102,19 @@ redirect_from:
   <div class="col-sm-6">
     <h2>FreeBSD</h2>
 
-    <h4>Compile from source</h4>
-
-    <p>You can compile minetest and choose easily minetest options using the FreeBSD port dialogs.</p>
-
-    <pre>
-      cd /usr/ports/games/minetest
-      make install
-      cd /usr/ports/games/minetest_game
-      make install
-    </pre>
-
-    <h4>Package method</h4>
+    <h4>Package manager</h4>
 
     <p>On FreeBSD 9.1 and newer, you can use the official pre-built packages:
         <code>pkg install minetest minetest_game</code></p>
+
+    <h4>Compile using ports</h4>
+
+    <p>You can compile minetest and choose easily minetest options using the FreeBSD port dialogs.</p>
+
+    <pre>cd /usr/ports/games/minetest
+make install
+cd /usr/ports/games/minetest_game
+make install</pre>
   </div>
 </div>
 
