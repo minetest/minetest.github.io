@@ -3,7 +3,6 @@
 ---
 // Global stytes
 
-@import "fonts";     // Fonts (currently Titillium Web)
 @import "navbar";    // Navigation bar
 @import "content";   // Content margins
 @import "jumbotron"; // Jumbotron
@@ -23,7 +22,6 @@ body {
 	background-color: #f2f2f2;
 	color: #333;
 	cursor: default;
-	font-family: "Titillium Web Regular", sans-serif;
 }
 
 p, li {
