@@ -1,102 +1,115 @@
 ---
 title: Home
+layout: homepage
 redirect_from:
-  - /screenshots/
+- /screenshots/
 ---
 
-{% include header.html %}
-
-<div class="jumbotron">
-  <div class="center">
-    <h1>Meet Minetest.</h1>
-    <h3>A free, open source voxel game engine and game. Fully extendable. You are in control.</h3>
-    <p><a class="btn btn-primary btn-lg" href="#about">Tell me more</a> <a class="btn btn-success btn-lg" href="/downloads/">Download</a></p>
-    <p><small><strong>News:</strong> 0.4.16 released. (June 3<sup>rd</sup> 2017)</small></p>
-  </div>
-</div>
-
-<div class="content">
-  <h1 id="about">About</h1>
-
-  <p>
-    <strong>Minetest is a near-infinite-world block sandbox game and a game engine</strong>, inspired by InfiniMiner, Minecraft, and the like.
-  </p>
-
-  <p>
-    Minetest is available natively for Windows, macOS, GNU/Linux, Android, and FreeBSD. It is Free/Libre and Open Source Software, released under the LGPL 2.1 or later.
-  </p>
-
-  <h1 id="features">Features</h1>
-
-  <div class="row">
-    <div class="col-lg-4">
-      <h4>Near-infinite maps</h4>
-      <p>With a 62000<sup>3</sup> block playing area, there's no running out of space. Yes, the world height is also near-infinite.</p>
+<h1 id="Features">Features</h1>
+<div class="row">
+  <div class="col-lg-6">
+    <h2 id="features">Players</h2>
+    <div>
+      <h4>Choose from Multiple Games</h4>
+      <p>There are many games to choose from. You could survive in a harsh
+        environment, build creatively, or fight other players.
+        Just <a href="/customize#games">download a game</a> or connect to a server.</p>
     </div>
-    <div class="col-lg-4">
-      <h4>Multiplayer support</h4>
+    <div>
+      <h4>Enormous Maps</h4>
+      <p>With 62,000x62,000x62,000 blocks, there's no running out of space.
+        You can mine 31,000 blocks down, or build 31,000 blocks up.</p>
+    </div>
+    <div>
+      <h4>Multiplayer Support</h4>
       <p>Play by yourself, locally with your friends, or online with dozens of players on a server.</p>
     </div>
-    <div class="col-lg-4">
-      <h4>Multiple <em>subgames</em></h4>
-      <p>Want to install dozens of mods at once? You can. Want to play Hunger Games? No problem!</p>
+    <div>
+      <h4>Texture Packs</h4>
+      <p>Not happy with the look of the textures? <a href="/customize/#texture-packs">Change them!</a></p>
+    </div>
+    <div>
+      <h4>Beautiful Map Generators</h4>
+      <p>Choose from many different fast map generators included in the engine,
+         or install one as a mod.</p>
     </div>
   </div>
-  <div class="row">
-    <div class="col-lg-4">
+  <div class="col-lg-6">
+    <h2 id="features">Developers</h2>
+    <div>
+      <h4>Make a Game</h4>
+      <p>Create your own voxel game using our
+        <a href="http://dev.minetest.net/Modding_Intro">Lua API</a>.
+        No need to worry about tricky voxel rendering or networking;
+        instead write scripts to add items and control game play.
+      </p>
+    </div>
+    <div>
       <h4>Modding API</h4>
-      <p><a href="http://dev.minetest.net/Intro">Modify the game and add new content</a> using the <a href="//www.lua.org/">Lua</a> programming language.</p>
+      <p>Use the same Lua API to make mods for any Minetest-based game.
+        Publish your mods on the <a href="https://forum.minetest.net">forums</a>,
+        and contribute to others' mods.
+      </p>
     </div>
-    <div class="col-lg-4">
-      <h4>Texture packs</h4>
-      <p>Not happy at the look of the textures? <a href="/customize/#texture-packs">Change the textures!</a></p>
+    <div>
+      <h4>Large Collection of Existing Mods</h4>
+      <p>There are over 1,000 open source mods on our forums which are ready to
+         be used, adapted or learned from.
+      </p>
     </div>
-    <div class="col-lg-4">
-      <h4>Beautiful map generators</h4>
-      <p>Choose from several different in-house map generators, <em>v5</em>, <em>v6</em>, <em>v7</em>, <em>flat</em>, <em>fractal</em>, and <em>valleys</em>,
-      each of them featuring several biomes.</p>
+    <div>
+      <h4>Friendly Community</h4>
+      <p>You can find help with any problems on our
+        <a href="https://forum.minetest.net">forums</a> or
+        <a href="/irc">IRC channels</a>.
+      </p>
     </div>
-  </div>
-
-  <h1 id="gallery">Gallery</h1>
-
-  <div class="row">
-    <div class="col-lg-6">
-      <a href="/media/gallery/1.jpg" class="thumbnail">
-        <img src="/media/gallery/1-thumb.jpg" alt="A sandy beach with grass and trees in the distance">
-      </a>
-    </div>
-
-    <div class="col-lg-6">
-      <a href="/media/gallery/2.jpg" class="thumbnail">
-        <img src="/media/gallery/2-thumb.jpg" alt="A grassy field with rock and trees">
-      </a>
-    </div>
-
-    <div class="col-lg-6">
-      <a href="/media/gallery/3.jpg" class="thumbnail">
-        <img src="/media/gallery/3-thumb.jpg" alt="A pond with papyrus">
-      </a>
-    </div>
-
-    <div class="col-lg-6">
-      <a href="/media/gallery/4.jpg" class="thumbnail">
-        <img src="/media/gallery/4-thumb.jpg" alt="A jungle with trees and grass">
-      </a>
-    </div>
-
-    <div class="col-lg-6">
-      <a href="/media/gallery/5.jpg" class="thumbnail">
-        <img src="/media/gallery/5-thumb.jpg" alt="A cave lit with torches">
-      </a>
-    </div>
-
-    <div class="col-lg-6">
-      <a href="/media/gallery/6.jpg" class="thumbnail">
-        <img src="/media/gallery/6-thumb.jpg" alt="A cave filled with lava">
-      </a>
+    <div>
+      <h4>Open Source</h4>
+      <p>The engine is open source and transparently developed.
+        <a href="https://github.com/minetest/minetest/issues">Submit an issue</a>
+        for anything you're missing, or get the source code and dig into it yourself.
+      </p>
     </div>
   </div>
 </div>
 
-{% include footer.html %}
+<h1 id="gallery">Gallery</h1>
+
+<div class="row">
+  <div class="col-lg-6">
+    <a href="/media/gallery/1.jpg" class="thumbnail">
+      <img src="/media/gallery/1-thumb.jpg" alt="A sandy beach with grass and trees in the distance">
+    </a>
+  </div>
+
+  <div class="col-lg-6">
+    <a href="/media/gallery/2.jpg" class="thumbnail">
+      <img src="/media/gallery/2-thumb.jpg" alt="A grassy field with rock and trees">
+    </a>
+  </div>
+
+  <div class="col-lg-6">
+    <a href="/media/gallery/3.jpg" class="thumbnail">
+      <img src="/media/gallery/3-thumb.jpg" alt="A pond with papyrus">
+    </a>
+  </div>
+
+  <div class="col-lg-6">
+    <a href="/media/gallery/4.jpg" class="thumbnail">
+      <img src="/media/gallery/4-thumb.jpg" alt="A jungle with trees and grass">
+    </a>
+  </div>
+
+  <div class="col-lg-6">
+    <a href="/media/gallery/5.jpg" class="thumbnail">
+      <img src="/media/gallery/5-thumb.jpg" alt="A cave lit with torches">
+    </a>
+  </div>
+
+  <div class="col-lg-6">
+    <a href="/media/gallery/6.jpg" class="thumbnail">
+      <img src="/media/gallery/6-thumb.jpg" alt="A cave filled with lava">
+    </a>
+  </div>
+</div>
