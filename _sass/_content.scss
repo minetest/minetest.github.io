@@ -3,7 +3,7 @@
 .content {
 	margin: 0 20%;
 
-	a {
+	a:not(.btn) {
 		color: hsl(100, 40%, 40%);
 		text-decoration: none;
 		transition: .15s;
