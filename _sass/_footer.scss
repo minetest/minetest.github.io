@@ -3,7 +3,7 @@
 footer {
 	background-color: hsl(0, 0, 18%);
 	color: hsl(0, 0, 60%);
-	text-align: center;
+	// text-align: center;
 	padding: 3rem 0;
 	margin-top: 3rem;
 
@@ -22,5 +22,9 @@ footer {
 			color: hsl(0, 0, 50%);
 			text-decoration: underline;
 		}
+	}
+
+	.footer-copyright {
+		padding-top: 2rem;
 	}
 }
