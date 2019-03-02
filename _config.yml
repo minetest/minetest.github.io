@@ -1,9 +1,10 @@
 permalink: pretty
-gems:
+plugins:
   - jekyll-redirect-from
 sass:
   style: compressed
 exclude:
   - CNAME
-  - README.md
+  - Gemfile
   - LICENSE.md
+  - README.md
