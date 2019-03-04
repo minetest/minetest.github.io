@@ -8,3 +8,7 @@ exclude:
   - Gemfile
   - LICENSE.md
   - README.md
+
+liquid:
+  error_mode: strict
+  strict_filters: true

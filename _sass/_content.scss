@@ -1,32 +1,14 @@
-// Content margins and link styling
+// .content class overrides
+// See <https://bulma.io/documentation/elements/content/>
 
 .content {
-	margin: 0 20%;
+  h1 {
+    text-align: center;
+    font-size: $size-2;
+  }
 
-	a:not(.btn) {
-		color: hsl(100, 40%, 40%);
-		text-decoration: none;
-		transition: .15s;
-
-		&:hover,
-		&:focus {
-			color: hsl(100, 30%, 30%);
-			text-decoration: underline;
-		}
-		&:active {
-			color: hsl(0, 0, 0);
-		}
-	}
-}
-
-@media (max-width 992px) {
-	.content { margin: 0 10%; }
-}
-
-@media (max-width 768px) {
-	.content { margin: 0 5%; }
-}
-
-@media (max-width 480px) {
-	.content { margin: 0 2%; }
+  h3 {
+    font-size: $size-5 * 1.05;
+    margin-bottom: 0.8rem;
+  }
 }

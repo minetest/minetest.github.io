@@ -5,68 +5,89 @@ redirect_from:
   - /servers.html
 ---
 
-<br>
-<p>
-  <strong>The server list is also available at <a href="http://servers.minetest.net/" title="http://servers.minetest.net/" rel="nofollow">servers.minetest.net</a>.</strong>
-</p>
-<br>
+<link rel="stylesheet" href="https://servers.minetest.net/style.css">
+<script defer>
+  var master = {
+    root: 'https://servers.minetest.net/',
+    no_avgtop: true,
+    no_ping: true,
+    no_uptime: true,
+    limit: 16,
+    clients_min: 1,
+  };
+</script>
+<script defer src="https://servers.minetest.net/list.js"></script>
 
-<div id="server_list"></div>
+<section class="section">
+  <div class="container">
+    <div class="content">
 
-<link rel="stylesheet" href="//servers.minetest.net/style.css" />
-<script>var master = {root: '//servers.minetest.net/', no_avgtop: true, no_ping: true, no_uptime: true, limit: 16, clients_min: 1};</script>
-<script src="//servers.minetest.net/list.js"></script>
+      <h1>Servers</h1>
+      <p class="has-text-strong">
+        The server list is also available at <a href="https://servers.minetest.net/" rel="nofollow">servers.minetest.net</a>.
+      </p>
 
-<h2 id="flags">Flags</h2>
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Flag</th>
-      <th>Explanation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Pwd</td>
-      <td>Players need to set a password at first connect</td>
-    </tr>
-    <tr>
-      <td>Dmg</td>
-      <td>Damage enabled</td>
-    </tr>
-    <tr>
-      <td>Pvp</td>
-      <td>Players can damage other players</td>
-    </tr>
-    <tr>
-      <td>Ded</td>
-      <td>Dedicated Server</td>
-    </tr>
-    <tr>
-      <td>Liq</td>
-      <td>Finite Liquids</td>
-    </tr>
-    <tr>
-      <td>Rol</td>
-      <td>Rollback enabled</td>
-    </tr>
-    <tr>
-      <td>Cre</td>
-      <td>Creative mode</td>
-    </tr>
-    <tr>
-      <td>Far</td>
-      <td>Players can see far away names</td>
-    </tr>
-  </tbody>
-</table>
+      <!-- Loaded by the script at the top of this page -->
+      <div id="server_list"></div>
+      <noscript>
+        <p class="has-text-centered has-text-weight-semibold">
+          JavaScript is required to view the server list.
+        </p>
+      </noscript>
 
-<h2 id="announcing_servers">Announcing Servers</h2>
+      <hr>
+      <div class="columns is-desktop">
 
-<p>
-Set this in your server configuration:
-</p>
-<pre class="code">server_announce = true
+        <div class="column">
+          <h2 id="flags">Flags</h2>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th class="has-text-right">Flag</th>
+                <th>Explanation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="has-text-right">Pwd</td>
+                <td>Players need to set a password at first connect</td>
+              </tr>
+              <tr>
+                <td class="has-text-right">Dmg</td>
+                <td>Damage enabled</td>
+              </tr>
+              <tr>
+                <td class="has-text-right">PvP</td>
+                <td>Players can damage other players</td>
+              </tr>
+              <tr>
+                <td class="has-text-right">Rol</td>
+                <td>Rollback enabled</td>
+              </tr>
+              <tr>
+                <td class="has-text-right">Cre</td>
+                <td>Creative mode</td>
+              </tr>
+              <tr>
+                <td class="has-text-right">Far</td>
+                <td>Players can see far away names</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="column">
+          <h2 id="announcing_servers">Announcing Servers</h2>
+          <p>
+            Set this in your server configuration:
+          </p>
+      <pre class="code">
+server_announce = true
 server_name = My server
 server_description = A server that I made.
-server_url = &lt;URL to server webpage or forum topic&gt;</pre>
+server_url = &lt;URL to server homepage or forum topic&gt;
+</pre>
+        </div>
+    </div>
+  </div>
+</section>

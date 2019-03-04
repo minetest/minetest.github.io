@@ -1,115 +1,81 @@
 ---
-title: Home
-layout: homepage
+title: Open source voxel game engine
+layout: default
+homepage: true
 redirect_from:
-- /screenshots/
+  - /screenshots/
 ---
 
-<h1 id="Features">Features</h1>
-<div class="row">
-  <div class="col-lg-6">
-    <h2 id="features">Players</h2>
-    <div>
-      <h4>Choose from Multiple Games</h4>
-      <p>There are many games to choose from. You could survive in a harsh
-        environment, build creatively, or fight other players.
-        Just <a href="/customize#games">download a game</a> or connect to a server.</p>
-    </div>
-    <div>
-      <h4>Enormous Maps</h4>
-      <p>With 62,000x62,000x62,000 blocks, there's no running out of space.
-        You can mine 31,000 blocks down, or build 31,000 blocks up.</p>
-    </div>
-    <div>
-      <h4>Multiplayer Support</h4>
-      <p>Play by yourself, locally with your friends, or online with dozens of players on a server.</p>
-    </div>
-    <div>
-      <h4>Texture Packs</h4>
-      <p>Not happy with the look of the textures? <a href="/customize/#texture-packs">Change them!</a></p>
-    </div>
-    <div>
-      <h4>Beautiful Map Generators</h4>
-      <p>Choose from many different fast map generators included in the engine,
-         or install one as a mod.</p>
+<section class="section section-home">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-10 is-9-desktop is-8-widescreen is-7-fullhd">
+        <h1 class="title">Minetest</h1>
+        <p class="home-paragraph">
+          An open source voxel game engine.
+          Play one of our many games, mod a game to your liking, make your own game,
+          or play on a multiplayer server.
+        </p>
+        <p class="home-paragraph">
+          Available for Windows, macOS, GNU/Linux, FreeBSD, OpenBSD, DragonFly BSD, and Android.
+        </p>
+        <div class="home-buttons">
+          <a class="button is-info is-size-5" href="#features">Tell me more</a>
+          <a class="button is-primary is-size-5" href="/downloads/">Download</a>
+        </div>
+        <p class="is-size-6">
+          <span class="has-text-weight-bold">News:</span> 5.0.1 released. (March 31<sup>st</sup> 2019)
+        </p>
+      </div>
     </div>
   </div>
-  <div class="col-lg-6">
-    <h2 id="features">Developers</h2>
-    <div>
-      <h4>Make a Game</h4>
-      <p>Create your own voxel game using our
-        <a href="http://dev.minetest.net/Modding_Intro">Lua API</a>.
-        No need to worry about tricky voxel rendering or networking;
-        instead write scripts to add items and control game play.
-      </p>
-    </div>
-    <div>
-      <h4>Modding API</h4>
-      <p>Use the same Lua API to make mods for any Minetest-based game.
-        Publish your mods on the <a href="https://forum.minetest.net">forums</a>,
-        and contribute to others' mods.
-      </p>
-    </div>
-    <div>
-      <h4>Large Collection of Existing Mods</h4>
-      <p>There are over 1,000 open source mods on our forums which are ready to
-         be used, adapted or learned from.
-      </p>
-    </div>
-    <div>
-      <h4>Friendly Community</h4>
-      <p>You can find help with any problems on our
-        <a href="https://forum.minetest.net">forums</a> or
-        <a href="/irc">IRC channels</a>.
-      </p>
-    </div>
-    <div>
-      <h4>Open Source</h4>
-      <p>The engine is open source and transparently developed.
-        <a href="https://github.com/minetest/minetest/issues">Submit an issue</a>
-        for anything you're missing, or get the source code and dig into it yourself.
-      </p>
-    </div>
-  </div>
-</div>
+</section>
 
-<h1 id="gallery">Gallery</h1>
+<section class="section">
+  <div class="container">
+    <h2 id="features" class="title section-title">Features</h2>
+    <div class="columns is-centered">
+      {% for category_hash in site.data.features %}
+      {% comment %}
+        The assignment below is required to be able to iterate on the nested hash.
+      {% endcomment %}
+      {% assign category = category_hash[1] %}
 
-<div class="row">
-  <div class="col-lg-6">
-    <a href="/media/gallery/1.jpg" class="thumbnail">
-      <img src="/media/gallery/1-thumb.jpg" alt="A tranquil bay with grass and trees">
-    </a>
-  </div>
+      <div class="column is-6 is-5-widescreen is-4-fullhd">
+        <h3 class="title is-size-3 has-text-centered">{{ category.title }}</h3>
 
-  <div class="col-lg-6">
-    <a href="/media/gallery/2.jpg" class="thumbnail">
-      <img src="/media/gallery/2-thumb.jpg" alt="South pacific old growth forest">
-    </a>
+        {% for feature in category.features %}
+        <h4 class="title feature-title">{{ feature.title }}</h4>
+        <p>{{ feature.description | markdownify }}</p>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
   </div>
+</section>
 
-  <div class="col-lg-6">
-    <a href="/media/gallery/3.jpg" class="thumbnail">
-      <img src="/media/gallery/3-thumb.jpg" alt="Castles in a large multiplayer server">
-    </a>
-  </div>
+<section class="section">
+  <div class="container">
+    <h2 id="gallery" class="title section-title">Gallery</h2>
+    <div class="columns is-multiline">
+      {% comment %}
+        Thumbnail file names are inferred from the image name.
+        For example, the thumbnail for `foo.jpg` will be `foo-thumb.jpg`.
+      {% endcomment %}
 
-  <div class="col-lg-6">
-    <a href="/media/gallery/4.jpg" class="thumbnail">
-      <img src="/media/gallery/4-thumb.jpg" alt="Sunset over an underwater forest">
-    </a>
+      {% for image in site.data.gallery %}
+      <div class="column is-6">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-16by9">
+              <a href="{{ image.image | relative_url }}">
+                <img src="{{ image.image | replace: ".", "-thumb." | relative_url }}" alt="{{ image.title }}">
+              </a>
+            </figure>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
   </div>
-
-  <div class="col-lg-6">
-    <a href="/media/gallery/5.jpg" class="thumbnail">
-      <img src="/media/gallery/5-thumb.jpg" alt="Cave with a dungeon entrance">
-    </a>
-  </div>
-
-  <div class="col-lg-6">
-    <a href="/media/gallery/6.jpg" class="thumbnail">
-      <img src="/media/gallery/6-thumb.jpg" alt="Underground cavern with flowing lava">
-    </a>
-  </div>
-</div>
+</section>

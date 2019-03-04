@@ -4,4 +4,3 @@ _site/
 node_modules/
 .jekyll-metadata
 *.patch
-Gemfile.lock

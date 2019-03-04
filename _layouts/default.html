@@ -1,18 +1,11 @@
-{% include header.html %}
-
-<div class="jumbotron reduced
-    {% if page.jumbotron %}
-      {{ page.jumbotron }}
-    {% else %}
-      {{ page.title | downcase }}
-    {% endif %}">
-  <div class="center">
-    <h1>{{ page.title }}</h1>
-  </div>
-</div>
-
-<div class="content">
-	{{ content }}
-</div>
-
-{% include footer.html %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    {% include header.html %}
+    {{ content }}
+    {% include footer.html %}
+  </body>
+</html>

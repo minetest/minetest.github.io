@@ -1,0 +1,38 @@
+// Used for the "hero" header on the homepage
+.section-home {
+  background-image: url("/media/background-home.jpg");
+  font-size: $size-5;
+  text-align: center;
+
+  &, .title {
+    color: $white;
+  }
+
+  .title {
+    font-size: 3.25rem;
+  }
+}
+
+.home-paragraph {
+  font-size: $size-5;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.home-buttons {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+
+  .button {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.feature-title,
+.feature-title:not(:last-child) {
+  color: lighten($grey-dark, 5%);
+  font-size: $size-5 * 1.1;
+  margin-top: 2.25rem;
+  margin-bottom: 0.9rem;
+}
