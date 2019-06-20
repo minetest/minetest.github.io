@@ -1,0 +1,45 @@
+// General styles that can be used across pages
+
+// Increase font size slightly on larger displays
+@include tablet {
+  p,
+  ul,
+  ol,
+  dl {
+    font-size: 1.05rem;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  ul,
+  ol,
+  dl {
+    line-height: 1.5;
+  }
+}
+
+a:not(.navbar-item) {
+  border-bottom: 1px solid transparentize($primary, 0.75);
+
+  &:hover {
+    background-color: transparentize($primary, 0.9);
+  }
+
+  &:active {
+    background-color: transparentize($primary, 0.8);
+  }
+}
+
+.title {
+  font-weight: $weight-semibold;
+}
+
+.section-title,
+.section-title:not(:last-child) {
+  color: desaturate($primary, 17%);
+  font-size: $size-2 * 1.05;
+  text-align: center;
+  margin-bottom: 3rem;
+}

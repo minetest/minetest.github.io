@@ -1,0 +1,61 @@
+players:
+  title: Players
+  features:
+    - title: Choose from Multiple Games
+      description: >
+        There are many games to choose from. You could survive in a harsh
+        environment, build creatively, or fight other players.
+        Just [download a game](/customize#games) or connect to a server.
+
+    - title: Enormous Maps
+      description: >
+        With 62,000 × 62,000 × 62,000 blocks, there's no running out of space.
+        You can mine 31,000 blocks down, or build 31,000 blocks up.
+
+    - title: Multiplayer Support
+      description: >
+        Play by yourself, locally with your friends, or online with
+        dozens of players on a server.
+
+    - title: Texture Packs
+      description: >
+        Not happy with the look of the textures?
+        [Change them!](/customize#texture-packs)
+
+    - title: Beautiful Map Generators
+      description: >
+        Choose from many different fast map generators included in the engine,
+        or install one as a mod.
+
+developers:
+  title: Developers
+  features:
+    - title: Make a Game
+      description: >
+        Create your own voxel game using our
+        [Lua API](https://dev.minetest.net/Modding_Intro).
+        No need to worry about tricky voxel rendering or networking;
+        instead, write scripts to add items and control game play.
+
+    - title: Modding API
+      description: >
+        Use the same Lua API to make mods for any Minetest-based game.
+        Publish your mods on the [forums](https://forum.minetest.net),
+        and contribute to others' mods.
+
+    - title: Large Collection of Existing Mods
+      description: >
+        There are over 1,000 open source mods on our forums which are ready
+        to be used, adapted or learned from.
+
+    - title: Friendly Community
+      description: >
+        You can find help with any problems on our
+        [forums](https://forum.minetest.net) or
+        [IRC channels](/irc).
+
+    - title: Open Source
+      description: >
+        The engine is open source and transparently developed.
+        [Submit an issue](https://github.com/minetest/minetest/issues)
+        for anything you're missing, or get the source code and dig into it yourself.

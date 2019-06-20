@@ -1,73 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} - Minetest</title>
-    <link rel="stylesheet" href="/lib/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
+<noscript>
+  <p>
+    <img src="https://stats.minetest.net/piwik.php?idsite=1" style="border:0;" alt="" data-proofer-ignore>
+  </p>
+</noscript>
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/media/favicon/57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/media/favicon/60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/media/favicon/72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/media/favicon/76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/media/favicon/114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/media/favicon/120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/media/favicon/144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/media/favicon/152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/media/favicon/180x180.png">
-    <link rel="icon" type="image/png" sizes="32x32"   href="/media/favicon/32x32.png">
-    <link rel="icon" type="image/png" sizes="194x194" href="/media/favicon/194x194.png">
-    <link rel="icon" type="image/png" sizes="96x96"   href="/media/favicon/96x96.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/media/favicon/192x192.png">
-    <link rel="icon" type="image/png" sizes="16x16"   href="/media/favicon/16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/media/favicon/144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <script type="text/javascript">
-      var _paq = _paq || [];
-      _paq.push(["trackPageView"]);
-      _paq.push(["enableLinkTracking"]);
-      (function() {
-        var u="//stats.minetest.net/";
-        _paq.push(["setTrackerUrl", u+"piwik.php"]);
-        _paq.push(["setSiteId", 1]);
-        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0];
-        g.type="text/javascript"; g.async=true; g.defer=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
-      })();
-    </script>
-  </head>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="{{ '/' | relative_url }}">
+        <img alt="Minetest logo" src="/media/icon.svg">
+        <div class="has-text-weight-bold navbar-brand-text">Minetest</div>
+      </a>
 
-  <body>
-    <noscript><p><img src="//stats.minetest.net/piwik.php?idsite=1" style="border:0;" alt="" data-proofer-ignore /></p></noscript>
-    <div id="top"></div>
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Menu</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="//www.minetest.net">
-            <img alt="Minetest" src="/media/icon.svg" style="height: 5rem;">
-          </a>
-          <a class="navbar-brand" href="//www.minetest.net">
-            Minetest
-          </a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="/#features">Features</a></li>
-            <li><a href="/#gallery">Gallery</a></li>
-            <li><a href="/downloads/">Download</a></li>
-            <li><a href="/customize/">Customize</a></li>
-            <li><a href="/get_involved/">Get Involved</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="container-fluid">
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbar" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="{{ '/#features' | relative_url }}">Features</a>
+        <a class="navbar-item" href="{{ '/#gallery' | relative_url }}">Gallery</a>
+        <a class="navbar-item" href="{{ '/downloads/' | relative_url }}">Download</a>
+        <a class="navbar-item" href="{{ '/customize/' | relative_url }}">Customize</a>
+        <a class="navbar-item" href="{{ '/get-involved/' | relative_url }}">Get Involved</a>
+    </div>
+  </div>
+</nav>

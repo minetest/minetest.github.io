@@ -1,10 +1,10 @@
 # www.minetest.net
 
-The official Minetest website, living at [www.minetest.net](http://www.minetest.net).
+The official Minetest website, living at [www.minetest.net](https://www.minetest.net).
 
 # Features
 
-* Uses Bootstrap 3.3.5 and jQuery 2.1.4.
+* Uses the [Bulma](https://bulma.io/) CSS framework.
 * Uses modern Web design techniques: `rem` units, `hsl` colors.
 * Responsive site and favicon.
 
@@ -15,6 +15,8 @@ Use `jekyll serve` to automatically build the Jekyll site and serve it locally.
 
 # License
 
-Copyright © 2015 Calinou and contributors
+Copyright © 2015-2019 Hugo Locurcio and contributors
 
-Code is under the MIT license, media and content under [CC BY-SA 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
+Unless otherwise specified, code is licensed under the MIT license.
+Media and content are licensed under
+[CC BY-SA 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).

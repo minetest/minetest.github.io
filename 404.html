@@ -5,14 +5,31 @@ layout: default
 permalink: 404.html
 ---
 
-<img style="float:left;margin: -10px 40px 0 0;"
-  src="/media/unknown_node.jpg"
-  alt="unknown_node">
+<section class="section">
+  <div class="container">
+    <div class="content">
 
-<h2>Sorry, we could not find that page!</h2>
+      <div class="columns is-centered">
+        <div class="column is-6">
+          <div class="has-text-centered">
+            <img
+              src="{{ '/media/unknown_node.jpg' | relative_url }}"
+              alt=""
+            >
 
-<p>
-  Please report any broken links on the
-  <a href="https://github.com/minetest/minetest.github.io/issues">issues page
-      for this website</a>.
-</p>
+            <h2>Sorry, we could not find that page!</h2>
+            <p>
+              <a href="{{ '/' | relative_url }}" class="has-text-weight-bold">Go to the homepage</a>
+            </p>
+            <p>
+              Please report any broken links on the
+              <a href="https://github.com/minetest/minetest.github.io/issues">
+                issues page for this website</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,14 +1,17 @@
 // Navigation bar
 
 .navbar {
-	box-shadow: 0 0 1rem #000;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 3px 0 transparentize($black, 0.8);
+  border-top: 3px solid $primary;
 }
 
-.navbar-brand {
-	font-weight: 700;
-	color: hsl(100, 35%, 45%) !important;
+// Replicate the hovered navbar item style on the brand,
+// as it's also a navigation item
+.navbar-brand:hover {
+  background-color: $navbar-item-hover-background-color;
+}
 
-	img {
-		margin-top: -1.7rem;
-	}
+.navbar-brand-text {
+  margin-left: 1rem;
 }
