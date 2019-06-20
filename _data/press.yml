@@ -1,0 +1,11 @@
+resources:
+  - title: Leaflet
+    author: rubenwardy
+    img: leaflet.png
+    para: The leaflets used at Freenode Live.
+    url: https://blog.rubenwardy.com/static/blog/freenode-live/leaflet.pdf
+
+  - title: Showcase Folder
+    author: rubenwardy and Shara
+    img: showcase.png
+    para: A highlight of the content Minetest has to offer.
