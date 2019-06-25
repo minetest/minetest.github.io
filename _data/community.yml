@@ -1,0 +1,14 @@
+- name: Forum
+  url: https://forum.minetest.net
+
+- name: Wiki
+  url: https://wiki.minetest.net
+
+- name: IRC
+  url: https://wiki.minetest.net/IRC
+
+- name: Reddit
+  url: https://reddit.com/r/minetest
+
+- name: Servers
+  url: /servers/

@@ -19,10 +19,10 @@ redirect_from:
     <!-- <h2 id="community" class="title section-title">Community</h2> -->
     <div class="columns is-centered">
       {% for link in site.data.community %}
-      <div class="column has-text-centered">
+      <a class="column has-text-centered no-underline hover-enlarge" href="{{ link.url }}">
         <img src="/media/logos/{{ link.name | downcase }}.png" alt="{{ link.name }} logo" width=100 height=100><br />
         <span class="title">{{ link.name }}</span>
-      </div>
+      </a>
       {% endfor %}
     </div>
   </div>

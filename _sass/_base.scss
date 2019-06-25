@@ -20,7 +20,7 @@
   }
 }
 
-a:not(.navbar-item) {
+a:not(.navbar-item,.no-underline) {
   border-bottom: 1px solid transparentize($primary, 0.75);
 
   &:hover {
@@ -29,6 +29,16 @@ a:not(.navbar-item) {
 
   &:active {
     background-color: transparentize($primary, 0.8);
+  }
+}
+
+.hover-enlarge {
+  transition: transform 200ms ease;
+  cursor: pointer;
+
+  &:hover {
+		transform: scale(1.1, 1.1);
+		z-index: 2;
   }
 }
 
