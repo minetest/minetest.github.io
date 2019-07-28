@@ -4,6 +4,8 @@ plugins:
 sass:
   style: compressed
 exclude:
+  # `vendor/` is excluded because of <https://github.com/jekyll/jekyll/issues/3330>
+  - vendor/
   - CNAME
   - Gemfile
   - LICENSE.md

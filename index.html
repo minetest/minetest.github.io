@@ -46,7 +46,7 @@ redirect_from:
 
         {% for feature in category.features %}
         <h4 class="title feature-title">{{ feature.title }}</h4>
-        <p>{{ feature.description | markdownify }}</p>
+        {{ feature.description | markdownify }}
         {% endfor %}
       </div>
       {% endfor %}
