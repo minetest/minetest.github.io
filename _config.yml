@@ -11,6 +11,8 @@ exclude:
   - LICENSE.md
   - README.md
 
+strict_front_matter: true
+
 liquid:
   error_mode: strict
   strict_filters: true
