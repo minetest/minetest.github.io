@@ -93,10 +93,13 @@ redirect_from:
 
         <p class="has-text-weight-bold">
           More information can be found at
-          <a href="https://www.openhub.net/p/minetest-c55">Open Hub</a>.
+          {% comment %}
+            OpenHub seems to be flaky, so ignore it in HTMLProofer link checking.
+          {% endcomment %}
+          <a href="https://www.openhub.net/p/minetest-c55" data-proofer-ignore>Open Hub</a>.
         </p>
         <p>
-          Want to <a href="{{ '/get_involved/#contribute' | relative_url }}">contribute</a>?
+          Want to <a href="{{ '/get-involved/#contribute' | relative_url }}">contribute</a>?
         </p>
 
       </div>
