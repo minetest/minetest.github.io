@@ -20,7 +20,7 @@ redirect_from:
       {% for link in site.data.community %}
       <a class="column has-text-centered no-underline hover-enlarge" href="{{ link.url }}">
         <div class="image">
-          <img src="/media/logos/{{ link.icon }}" alt="{{ link.name }} logo">
+          <img src="{{ '/media/logos/' | append: link.icon | relative_url }}" alt="{{ link.name }} logo">
         </div>
         <span class="title">{{ link.name }}</span>
       </a>
@@ -38,7 +38,7 @@ redirect_from:
         <div class="content">
           <ul>
             <li>
-              Work on a <a href="http://dev.minetest.net/Modding_Intro">game or mod</a>,
+              Work on a <a href="https://dev.minetest.net/Modding_Intro">game or mod</a>,
               and publish it on <a href="https://content.minetest.net">ContentDB</a>
               or <a href="https://forum.minetest.net">the forums</a>.
             </li>
@@ -100,7 +100,7 @@ redirect_from:
         Upstream repositories and official Windows packages are handled by the
         <a href="https://github.com/minetest?tab=members">core team</a>,
         consisting of a bunch of people who are much trusted to keep Minetest progressing in good condition.
-        The core team is formed of people who have made great <a href="/credits/">contributions</a> to Minetest.
+        The core team is formed of people who have made great <a href="{{ '/credits/' | relative_url }}">contributions</a> to Minetest.
         Contributions are approved if two members of the core team agree on them.
       </p>
       <p>
@@ -108,7 +108,7 @@ redirect_from:
       </p>
       <p>
         For more information, take a look at
-        <a href="http://dev.minetest.net/All_rules_regarding_to_development">
+        <a href="https://dev.minetest.net/All_rules_regarding_to_development">
           all the rules regarding to development
         </a>.
       </p>
@@ -130,14 +130,14 @@ redirect_from:
           <strong>Games</strong> define game content: nodes, entities,
           textures, meshes, sounds and custom behavior implemented in Lua.
           Games consist of mods that plug into the engine using the
-          <a href="http://dev.minetest.net">Modding API</a>.
+          <a href="https://dev.minetest.net">Modding API</a>.
         </li>
       </ul>
 
       <p>
         For more information see the
-        <a href="http://dev.minetest.net/Terminology">terminology</a> or
-        <a href="http://dev.minetest.net/Engine_structure">engine structure</a>
+        <a href="https://dev.minetest.net/Terminology">terminology</a> or
+        <a href="https://dev.minetest.net/Engine_structure">engine structure</a>
         developer wiki pages.
       </p>
     </div>
