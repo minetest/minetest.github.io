@@ -1,6 +1,9 @@
 // Used for the "hero" header on the homepage
 .section-home {
   background-image: url("/media/background-home.jpg");
+  // Background color is displayed while the image is loading,
+  // so that the text is still readable
+  background-color: hsl(0, 1%, 13%);
   font-size: $size-5;
   text-align: center;
 
