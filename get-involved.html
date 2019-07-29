@@ -16,290 +16,295 @@ redirect_from:
 
 <section class="section">
   <div class="container">
-    <div class="content">
+    <div class="columns is-centered iconlist">
+      {% for link in site.data.community %}
+      <a class="column has-text-centered no-underline hover-enlarge" href="{{ link.url }}">
+        <div class="image">
+          <img src="/media/logos/{{ link.icon }}" alt="{{ link.name }} logo">
+        </div>
+        <span class="title">{{ link.name }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 
-      <h1>Get Involved</h1>
-
-      <h2>Community</h2>
-      <h3>Where?</h3>
-      <ul>
-        <li><a href="https://forum.minetest.net">Forum</a></li>
-        <li><a href="https://wiki.minetest.net">Wiki</a></li>
-        <li><a href="#internet-relay-chat">IRC</a></li>
-        <li><a href="https://reddit.com/r/minetest">Subreddit</a></li>
-        <li><a href="/servers/">Server list</a></li>
-      </ul>
-
-      <h2 id="internet-relay-chat">Internet Relay Chat</h2>
-
-      <h3>Channels</h3>
-      <div>
-        <ul>
-          <li>
-            <strong><a href="https://webchat.freenode.net/?channels=#minetest">#minetest</a></strong>
-            (<a href="http://irc.minetest.net/minetest">Logs</a>):
-            Main channel for general Minetest engine, modding and games discussion or support.
-          </li>
-          <li>
-            <strong><a href="https://webchat.freenode.net/?channels=#minetest-dev">#minetest-dev</a></strong>
-            (<a href="http://irc.minetest.net/minetest-dev">Logs</a>):
-            Development channel, strictly only for development discussion of the Minetest engine and Minetest Game.
-            Webchat can be used to listen only, not talk, on #minetest-dev
-          </li>
-          <li>
-            <strong><a href="https://webchat.freenode.net/?channels=#minetest-hub">#minetest-hub</a></strong>
-            (<a href="http://irc.minetest.net/minetest-hub">Logs</a>):
-            A moderated channel for people who regularly improve Minetest
-            by developing, modding, hosting servers and otherwise.
-            You need to ask an operator for voice here, make sure to read
-            the <a href="http://hub.minetest.net">hub website</a> first.
-          </li>
-          <li>
-            Channels about Minetest in other languages (note that most people hang out
-            on <code>#minetest</code>, which is the main channel).
-            <ul>
-              <li><strong><a href="https://webchat.freenode.net/?channels=#minetest-de">#minetest-de</a></strong> German channel</li>
-              <li><strong><a href="https://webchat.freenode.net/?channels=#minetest-es">#minetest-es</a></strong> Spanish channel</li>
-              <li><strong><a href="https://webchat.freenode.net/?channels=#minetest-fr">#minetest-fr</a></strong> French channel</li>
-            </ul>
-          </li>
+<section class="section">
+  <div class="container">
+    <h2 id="contribute" class="title section-title">Contribute</h2>
+    <div class="columns is-centered">
+      <div class="column">
+        <h3 id="programmers" class="is-size-3">Programmers</h3>
+        <div class="content">
+          <ul>
+            <li>
+              Work on a <a href="http://dev.minetest.net/Modding_Intro">game or mod</a>,
+              and publish it on <a href="https://content.minetest.net">ContentDB</a>
+              or <a href="https://forum.minetest.net">the forums</a>.
+            </li>
+            <li>
+              Report bugs and submit patches on
+              <a href="https://github.com/minetest">GitHub</a> or <a href="https://wiki.minetest.net/IRC">IRC</a>.
+            </li>
+            <li>
+              <a href="https://forum.minetest.net/viewtopic.php?f=7&t=19877">Help us review and merge pull requests</a>.
+            </li>
           </ul>
         </div>
-
-        <h3>Rules</h3>
-        <p>
-          Some people don't know how to behave on <abbr title="Internet Relay Chat">IRC</abbr>,
-          so here are some simple rules:
-        </p>
-        <ul>
-          <li>Don't ask if you can ask questions, just ask.</li>
-          <li>Be patient when you ask something, people might not be around.</li>
-          <li>Don't spam.</li>
-          <li>Don't flood the channel with messages or bot commands.</li>
-          <li>Use a pastebin if you want to post more than 4 lines (such as error messages or code).</li>
-          <li>Annoying, racist, or any form of derogatory terms against any user or channel operator will probably get you quieted; or even banned.</li>
-          <li>If you're going to ask someone something, "please" goes a very long way.</li>
-          <li>The channels are not playgrounds and are frequently used for talks which are not off-topic.</li>
-          <li>Off-topic is allowed, but excessive use of it is disallowed.</li>
-          <li>Link shorteners are discouraged for URLs that are not very long.</li>
-        </ul>
-
-        <h2 id="contribute">Contribute</h2>
-        <p>
-          There are several ways to get into development:
-        </p>
-        <ul>
-          <li>
-            Giving support on the <a href="https://forum.minetest.net">forums</a> and <a href="#internet-relay-chat">IRC</a>.
-          </li>
-          <li>
-            Work on a <a href="http://dev.minetest.net/Modding_Intro">game or mod</a>,
-            and publish it on <a href="https://content.minetest.net">ContentDB</a>
-            or <a href="https://forum.minetest.net">the forums</a>.
-          </li>
-          <li>
-            Help develop Minetest by reporting
-            bugs and submiting patches on
-            <a href="https://github.com/minetest">GitHub</a> or <a href="#internet-relay-chat">IRC</a>.
-          </li>
-          <li>
-            <strong>Translating:</strong> Help translating Minetest using
-            <a href="https://hosted.weblate.org/projects/minetest/minetest/">our web interface</a>.
-          </li>
-        </ul>
-
-        <h3>The Process</h3>
-        <p>
-          Upstream repositories and official Windows packages are handled by the <a href="https://github.com/minetest?tab=members">core team</a>, consisting of a bunch of people who are much trusted to keep Minetest progressing in good condition. The core team is best contacted on <abbr title="Internet Relay Chat">IRC</abbr> at <code>#minetest-dev @ chat.freenode.net</code>.
-          The core team is formed of people who have made great <a href="/credits/">contributions</a> to Minetest.
-          Contributions are approved if two members of the core team agree on them.
-        </p>
-        <p>
-          For more information, take a look at
-          <a href="http://dev.minetest.net/All_rules_regarding_to_development">
-            all the rules regarding to development
-          </a>.
-        </p>
-
-        <h3>Project Structure</h3>
-        <p>
-          Minetest is distributed as an engine, combined with a couple of games.
-          Upstream repositories can be found at
-          <a href="https://github.com/minetest/">https://github.com/minetest/</a>.
-        </p>
-        <ul>
-          <li>
-            <strong>The engine</strong> (core) is the base for everything.
-            C++ is used for housekeeping and performance-critical stuff,
-            Lua for extensible things.
-          </li>
-          <li>
-            <strong>Games</strong> define game content: nodes, entities,
-            textures, meshes, sounds and custom behavior implemented in Lua.
-            Games consist of mods that plug into the engine using the
-            <a href="http://dev.minetest.net">Modding API</a>.
-          </li>
-        </ul>
-        <p>
-          For more information see the
-          <a href="http://dev.minetest.net/Terminology">terminology</a> or
-          <a href="http://dev.minetest.net/Engine_structure">engine structure</a>
-          developer wiki pages.
-        </p>
-
-        <h2 id="reporting-issues">Reporting issues</h2>
-        <p>
-          Different things related to Minetest are maintained by different people, contacted in different ways. Here you can find where to report issues, bugs and any other kinds of problems regarding to each “product”.
-        </p>
-        <p>
-          People are generally available on freenode <abbr title="Internet Relay Chat">IRC</abbr>, the Minetest Forums, GitHub and/or via email.
-        </p>
-
-        <h2>Programs and Services</h2>
-        <table class="table is-striped">
-          <tr>
-            <th>Program</th>
-            <th>People Responsible</th>
-            <th>Source</th>
-            <th>Issue Tracker</th>
-          </tr>
-          <tr>
-            <td>Minetest Engine</td>
-            <td>Core developers</td>
-            <td>
-              <a href="https://github.com/minetest/minetest">Source</a>
-            </td>
-            <td>
-              <a href="https://github.com/minetest/minetest/issues">Issues</a>
-            </td>
-          </tr>
-          <tr>
-            <td>Minetest Game</td>
-            <td>Core developers</td>
-            <td>
-              <a href="https://github.com/minetest/minetest_game">Source</a>
-            </td>
-            <td>
-              <a href="https://github.com/minetest/minetest_game/issues">Issues</a>
-            </td>
-          </tr>
-          <tr>
-            <td>Minetest Mapper</td>
-            <td>Core developers</td>
-            <td>
-              <a href="https://github.com/minetest/minetestmapper">Source</a>
-            </td>
-            <td>
-              <a href="https://github.com/minetest/minetestmapper/issues">Issues</a>
-            </td>
-          </tr>
-          <tr>
-            <td>Blender B3DExport</td>
-            <td>Core developers</td>
-            <td>
-              <a href="https://github.com/minetest/B3DExport">Source</a>
-            </td>
-            <td>
-              <a href="https://github.com/minetest/B3DExport/issues">Issues</a>
-            </td>
-          </tr>
-          <tr>
-            <th>Service</th>
-            <th>People Responsible</th>
-            <th>Source</th>
-            <th>Issue Tracker</th>
-          </tr>
-          <tr>
-            <td>*.minetest.net DNS</td>
-            <td>celeron55</td>
-            <td>n/a</td>
-            <td>Contact celeron55. His approval is needed to host under minetest.net</td>
-          </tr>
-          <tr>
-            <td>www.minetest.net</td>
-            <td>celeron55</td>
-            <td><a href="https://github.com/minetest/minetest.github.io">Source</a></td>
-            <td><a href="https://github.com/minetest/minetest.github.io/issues">Issues</a></td>
-          </tr>
-          <tr>
-            <td>forum.minetest.net</td>
-            <td>celeron55</td>
-            <td><a href="https://github.com/minetest/forum.minetest.net_template1">Theme</a></td>
-            <td>Contact a moderator for concerns about content (Use "report this post" if possible)</td>
-          </tr>
-          <tr>
-            <td>wiki/dev.minetest.net</td>
-            <td>celeron55</td>
-            <td><a href="https://www.mediawiki.org">MediaWiki</a></td>
-            <td>
-              <a href="https://forum.minetest.net/viewtopic.php?f=3&t=10473">Ask for an account to edit</a>
-              or report issues <a href="https://forum.minetest.net/viewforum.php?f=3">on the forum</a>
-            </td>
-          </tr>
-          <tr>
-            <td>servers.minetest.net</td>
-            <td>sfan5</td>
-            <td><a href="https://github.com/minetest/master-server">Source</a></td>
-            <td><a href="https://github.com/minetest/master-server/issues">Issues</a></td>
-          </tr>
-          <tr>
-            <td>content.minetest.net</td>
-            <td>rubenwardy</td>
-            <td><a href="https://github.com/minetest/contentdb">Source</a></td>
-            <td><a href="https://github.com/minetest/contentdb/issues">Issues</a></td>
-          </tr>
-          <tr>
-            <td>irc.minetest.net</td>
-            <td>sfan5</td>
-            <td><a href="https://github.com/moritz/ilbot">Source</a></td>
-            <td>Contact sfan5</td>
-          </tr>
-          <tr>
-            <td><a href="https://play.google.com/store/apps/details?id=net.minetest.minetest">Google Play</a></td>
-            <td>nerzhul aka. nrzkt</td>
-            <td>n/a</td>
-            <td>Contact nerzhul</td>
-          </tr>
-        </table>
-
-
-        <h2 id="donate">Donate</h2>
-        <h3>celeron55 <span class="is-size-5 has-text-grey has-text-weight-normal">(founder)</span></h3>
-
-        <p>
-          You can tip money to celeron55, to be mostly used for hosting of
-          websites and overall maintenance effort on the project.
-        </p>
-
-        <p>
-          <strong>PayPal address:</strong> celeron55@gmail.com (Please note in the message that you&#039;re supporting Minetest in particular.)
-        </p>
-
-        <div style="display: inline-block; width: 300px;">
-          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="hosted_button_id" value="9MKR3HL26KKSJ">
-            <table style="width: 500px;">
-              <tr><td><input type="hidden" name="on0" value="Tip celeron55's Minetest efforts">Tip celeron55's Minetest efforts</td></tr><tr><td><select name="os0">
-                <option value="Small tip">Small tip €2.00 EUR</option>
-                <option value="Larger tip">Larger tip €5.00 EUR</option>
-                <option value="A plentiful tip">A plentiful tip €12.00 EUR</option>
-                <option value="This surely is enough, right?">This surely is enough, right? €42.00 EUR</option>
-                <option value="No?">No? €75.00 EUR</option>
-                <option value="Yes?">Yes? €150.00 EUR</option>
-                <option value="ALL THE MONEY">ALL THE MONEY €500.00 EUR</option>
-              </select> </td></tr>
-            </table>
-            <input type="hidden" name="currency_code" value="EUR">
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
-          </form>
+      </div>
+      <div class="column">
+        <h3 id="artists" class="is-size-3">Artists</h3>
+        <div class="content">
+          <ul>
+            <li>
+              Hang around on the forums, and help with
+              <a href="https://forum.minetest.net/viewtopic.php?f=47&t=1585">texture requests</a>.
+            </li>
+            <li>
+              Team up and create a new game.
+            </li>
+          </ul>
         </div>
+      </div>
+      <div class="column">
+        <h3 id="everyone" class="is-size-3">Everyone</h3>
+        <div class="content">
+          <ul>
+            <li>
+              <a href="#reporting-issues">Report bugs and request features</a>.
+            </li>
+            <li>
+              Give support on the <a href="https://forum.minetest.net">forums</a> and <a href="https://wiki.minetest.net/IRC">IRC</a>.
+            </li>
+            <li>
+              Help translating Minetest using
+              <a href="https://hosted.weblate.org/projects/minetest/minetest/">our web interface</a>.
+            </li>
+            <li>
+              <a href="#donate">Donate</a> money to pay for infrastructure, and support your favourite contributors.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <h2>Other</h2>
-        <p>
-          Your favourite server or modder might accept tips too; make sure to check those out.
-        </p>
 
+<section class="section">
+  <div class="container">
+    <h2 id="developed" class="title section-title">How is Minetest developed?</h2>
+    <div class="content">
+      <h3 class="is-size-3">The Process</h3>
+      <p>
+        Upstream repositories and official Windows packages are handled by the
+        <a href="https://github.com/minetest?tab=members">core team</a>,
+        consisting of a bunch of people who are much trusted to keep Minetest progressing in good condition.
+        The core team is formed of people who have made great <a href="/credits/">contributions</a> to Minetest.
+        Contributions are approved if two members of the core team agree on them.
+      </p>
+      <p>
+        The core team is best contacted on <abbr title="Internet Relay Chat">IRC</abbr> at <code>#minetest-dev @ chat.freenode.net</code>.
+      </p>
+      <p>
+        For more information, take a look at
+        <a href="http://dev.minetest.net/All_rules_regarding_to_development">
+          all the rules regarding to development
+        </a>.
+      </p>
+
+      <h3 class="is-size-3">Project Structure</h3>
+      <p>
+        Minetest is distributed as an engine, combined with a couple of games.
+        Upstream repositories can be found at
+        <a href="https://github.com/minetest/">https://github.com/minetest/</a>.
+      </p>
+
+      <ul>
+        <li>
+          <strong>The engine</strong> (core) is the base for everything.
+          C++ is used for housekeeping and performance-critical stuff,
+          Lua for extensible things.
+        </li>
+        <li>
+          <strong>Games</strong> define game content: nodes, entities,
+          textures, meshes, sounds and custom behavior implemented in Lua.
+          Games consist of mods that plug into the engine using the
+          <a href="http://dev.minetest.net">Modding API</a>.
+        </li>
+      </ul>
+
+      <p>
+        For more information see the
+        <a href="http://dev.minetest.net/Terminology">terminology</a> or
+        <a href="http://dev.minetest.net/Engine_structure">engine structure</a>
+        developer wiki pages.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container">
+    <h2 id="reporting-issues" class="title section-title">Reporting Issues</h2>
+    <div class="content">
+      <h3 class="is-size-3">Where?</h3>
+      <p>
+        Different things related to Minetest are maintained by different people, contacted in different ways. Here you can find where to report issues, bugs and any other kinds of problems regarding to each “product”.
+      </p>
+      <p>
+        People are generally available on freenode <abbr title="Internet Relay Chat">IRC</abbr>, the Minetest Forums, GitHub and/or via email.
+      </p>
+      <table class="table is-striped">
+        <tr>
+          <th>Program</th>
+          <th>People Responsible</th>
+          <th>Source</th>
+          <th>Issue Tracker</th>
+        </tr>
+        <tr>
+          <td>Minetest Engine</td>
+          <td>Core developers</td>
+          <td>
+            <a href="https://github.com/minetest/minetest">Source</a>
+          </td>
+          <td>
+            <a href="https://github.com/minetest/minetest/issues">Issues</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Minetest Game</td>
+          <td>Core developers</td>
+          <td>
+            <a href="https://github.com/minetest/minetest_game">Source</a>
+          </td>
+          <td>
+            <a href="https://github.com/minetest/minetest_game/issues">Issues</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Minetest Mapper</td>
+          <td>Core developers</td>
+          <td>
+            <a href="https://github.com/minetest/minetestmapper">Source</a>
+          </td>
+          <td>
+            <a href="https://github.com/minetest/minetestmapper/issues">Issues</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Blender B3DExport</td>
+          <td>Core developers</td>
+          <td>
+            <a href="https://github.com/minetest/B3DExport">Source</a>
+          </td>
+          <td>
+            <a href="https://github.com/minetest/B3DExport/issues">Issues</a>
+          </td>
+        </tr>
+        <tr>
+          <th>Service</th>
+          <th>People Responsible</th>
+          <th>Source</th>
+          <th>Issue Tracker</th>
+        </tr>
+        <tr>
+          <td>*.minetest.net DNS</td>
+          <td>celeron55</td>
+          <td>n/a</td>
+          <td>Contact celeron55. His approval is needed to host under minetest.net</td>
+        </tr>
+        <tr>
+          <td>www.minetest.net</td>
+          <td>celeron55</td>
+          <td><a href="https://github.com/minetest/minetest.github.io">Source</a></td>
+          <td><a href="https://github.com/minetest/minetest.github.io/issues">Issues</a></td>
+        </tr>
+        <tr>
+          <td>forum.minetest.net</td>
+          <td>celeron55</td>
+          <td><a href="https://github.com/minetest/forum.minetest.net_template1">Theme</a></td>
+          <td>Contact a moderator for concerns about content (Use "report this post" if possible)</td>
+        </tr>
+        <tr>
+          <td>wiki/dev.minetest.net</td>
+          <td>celeron55</td>
+          <td><a href="https://www.mediawiki.org">MediaWiki</a></td>
+          <td>
+            <a href="https://forum.minetest.net/viewtopic.php?f=3&t=10473">Ask for an account to edit</a>
+            or report issues <a href="https://forum.minetest.net/viewforum.php?f=3">on the forum</a>
+          </td>
+        </tr>
+        <tr>
+          <td>servers.minetest.net</td>
+          <td>sfan5</td>
+          <td><a href="https://github.com/minetest/master-server">Source</a></td>
+          <td><a href="https://github.com/minetest/master-server/issues">Issues</a></td>
+        </tr>
+        <tr>
+          <td>content.minetest.net</td>
+          <td>rubenwardy</td>
+          <td><a href="https://github.com/minetest/contentdb">Source</a></td>
+          <td><a href="https://github.com/minetest/contentdb/issues">Issues</a></td>
+        </tr>
+        <tr>
+          <td>irc.minetest.net</td>
+          <td>sfan5</td>
+          <td><a href="https://github.com/moritz/ilbot">Source</a></td>
+          <td>Contact sfan5</td>
+        </tr>
+        <tr>
+          <td><a href="https://play.google.com/store/apps/details?id=net.minetest.minetest">Google Play</a></td>
+          <td>nerzhul aka. nrzkt</td>
+          <td>n/a</td>
+          <td>Contact nerzhul</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container">
+    <h2 id="donate" class="title section-title">Donate</h2>
+    <div class="content">
+      <h3 class="is-size-3">celeron55 <span class="is-size-5 has-text-grey has-text-weight-normal">(founder)</span></h3>
+
+      <p>
+        You can tip money to celeron55, to be mostly used for hosting of
+        websites and overall maintenance effort on the project.
+      </p>
+
+      <p>
+        <strong>PayPal address:</strong> celeron55@gmail.com (Please note in the message that you&#039;re supporting Minetest in particular.)
+      </p>
+
+      <div style="display: inline-block; width: 300px;">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="9MKR3HL26KKSJ">
+          <table style="width: 500px;">
+            <tr><td><input type="hidden" name="on0" value="Tip celeron55's Minetest efforts">Tip celeron55's Minetest efforts</td></tr><tr><td><select name="os0">
+              <option value="Small tip">Small tip €2.00 EUR</option>
+              <option value="Larger tip">Larger tip €5.00 EUR</option>
+              <option value="A plentiful tip">A plentiful tip €12.00 EUR</option>
+              <option value="This surely is enough, right?">This surely is enough, right? €42.00 EUR</option>
+              <option value="No?">No? €75.00 EUR</option>
+              <option value="Yes?">Yes? €150.00 EUR</option>
+              <option value="ALL THE MONEY">ALL THE MONEY €500.00 EUR</option>
+            </select> </td></tr>
+          </table>
+          <input type="hidden" name="currency_code" value="EUR">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        </form>
+      </div>
+
+      <h3 class="is-size-3">Other</h3>
+      <p>
+        Your favourite server or modder might accept tips too; make sure to check those out.
+      </p>
     </div>
   </div>
 </section>
