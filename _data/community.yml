@@ -1,14 +1,19 @@
-- name: Forum
-  url: https://forum.minetest.net
-
 - name: Wiki
   url: https://wiki.minetest.net
+  icon: wiki.svg
+
+- name: Forum
+  url: https://forum.minetest.net
+  icon: forum.svg
 
 - name: IRC
   url: https://wiki.minetest.net/IRC
-
-- name: Reddit
-  url: https://reddit.com/r/minetest
+  icon: irc.svg
 
 - name: Servers
   url: /servers/
+  icon: servers.svg
+
+- name: Reddit
+  url: https://reddit.com/r/minetest
+  icon: reddit.png

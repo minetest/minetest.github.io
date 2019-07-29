@@ -17,10 +17,12 @@ redirect_from:
 <section class="section">
   <div class="container">
     <!-- <h2 id="community" class="title section-title">Community</h2> -->
-    <div class="columns is-centered">
+    <div class="columns is-centered iconlist">
       {% for link in site.data.community %}
       <a class="column has-text-centered no-underline hover-enlarge" href="{{ link.url }}">
-        <img src="/media/logos/{{ link.name | downcase }}.png" alt="{{ link.name }} logo" width=100 height=100><br />
+        <div class="image">
+          <img src="/media/logos/{{ link.icon }}" alt="{{ link.name }} logo">
+        </div>
         <span class="title">{{ link.name }}</span>
       </a>
       {% endfor %}

@@ -20,7 +20,7 @@
   }
 }
 
-a:not(.navbar-item,.no-underline) {
+a:not(.navbar-item, .no-underline) {
   border-bottom: 1px solid transparentize($primary, 0.75);
 
   &:hover {
@@ -37,8 +37,8 @@ a:not(.navbar-item,.no-underline) {
   cursor: pointer;
 
   &:hover {
-		transform: scale(1.1, 1.1);
-		z-index: 2;
+    transform: scale(1.1, 1.1);
+    z-index: 2;
   }
 }
 
@@ -52,4 +52,17 @@ a:not(.navbar-item,.no-underline) {
   font-size: $size-2 * 1.05;
   text-align: center;
   margin-bottom: 3rem;
+}
+
+.iconlist {
+  .image {
+    width: 100px;
+    height: 120px;
+    padding: 10px 0;
+    margin: auto;
+  }
+  img {
+    max-width: 100px;
+    max-height: 100px;
+  }
 }
