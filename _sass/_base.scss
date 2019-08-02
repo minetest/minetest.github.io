@@ -20,7 +20,7 @@
   }
 }
 
-a:not(.navbar-item, .no-underline) {
+a:not(.navbar-item, .no-underline ,.card) {
   border-bottom: 1px solid transparentize($primary, 0.75);
 
   &:hover {
@@ -37,7 +37,7 @@ a:not(.navbar-item, .no-underline) {
   cursor: pointer;
 
   &:hover {
-    transform: scale(1.1, 1.1);
+    transform: scale(1.05, 1.05);
     z-index: 2;
   }
 }
@@ -46,12 +46,16 @@ a:not(.navbar-item, .no-underline) {
   font-weight: $weight-semibold;
 }
 
-.section-title,
+.section-title, .main-title,
 .section-title:not(:last-child) {
   color: desaturate($primary, 17%);
   font-size: $size-2 * 1.05;
   text-align: center;
   margin-bottom: 3rem;
+}
+
+.main-title {
+  margin-top: 3rem;
 }
 
 .iconlist {

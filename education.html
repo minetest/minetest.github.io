@@ -1,0 +1,88 @@
+---
+title: Minetest for Education
+layout: default
+---
+
+<h1 class="title main-title">Minetest for Education</h1>
+
+<section class="section">
+	<div class="container">
+		<h1 id="why" class="title">Why Minetest?</h1>
+		<h6 class="subtitle is-6">We asked some educators why, and here's what they said.</h6>
+
+		<div class="columns is-multiline">
+			{% for point in site.data.edu.why %}
+				<div class="column is-one-third">
+					<h2 class="title is-4">{{ point.title }}</h2>
+					<p>
+						{{ point.para }}
+					</p>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+
+<section class="section" style="background-color: #f0f0f0;">
+	<div class="container">
+		<h1 id="featured" class="title">Featured Projects</h1>
+		<h6 class="subtitle is-6">Existing educational projects that use Minetest.</h6>
+
+		<div class="columns is-multiline">
+			{% for point in site.data.edu.featured %}
+				<a class="column is-one-third hover-enlarge" href="{{ point.url }}" rel="nofollow">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-16by9">
+								<img src="/media/edu/{{ point.img }}" style="object-fit: cover;" alt="screenshot">
+							</figure>
+						</div>
+						<div class="card-content">
+							<h2 class="title is-4">{{ point.title }}
+								{% if point.tag %}
+									<span class="tag is-rounded is-warning">{{ point.tag }}</span>
+								{% endif %}
+								{% for lang in point.lang %}
+									<img class="is-pulled-right" src="/assets/icons/lang-{{ lang }}.png" alt="{{ lang }}">
+								{% endfor %}
+							</h2>
+							<h6 class="subtitle is-6">{{ point.author }}</h6>
+							<p>
+								{{ point.para }}
+							</p>
+						</div>
+					</div>
+				</a>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<section class="section">
+	<div class="container">
+		<h1 id="resources" class="title">Resources</h1>
+		<h6 class="subtitle is-6">Leverage the community.</h6>
+
+		<div class="columns is-multiline">
+			{% for point in site.data.edu.resources %}
+				<a class="column is-one-third hover-enlarge" href="{{ point.url }}" rel="nofollow">
+					<div class="card {{ point.classes }}">
+						<div class="card-content">
+							<h2 class="title is-4">{{ point.title }}</h2>
+							<h6 class="subtitle is-6">{{ point.author }}</h6>
+							<p>
+								{{ point.para }}
+							</p>
+						</div>
+					</div>
+				</a>
+			{% endfor %}
+		</div>
+
+		<div class="notification">
+			<b>Your project here!</b>
+			Contribute back to the community by making your learning resources publicly available.
+		</div>
+	</div>
+</section>
