@@ -5,6 +5,17 @@ layout: default
 permalink: 404.html
 ---
 
+<script>
+  // Forum URL redirection
+  const urlParams = new URLSearchParams(window.location.search.slice(1));
+
+  if (urlParams.has('id')) {
+    // Convert to a number for security (only numeric values make sense anyway)
+    const topicId = Number(urlParams.get('id'));
+    window.location.replace(`https://forum.minetest.net/viewtopic.php?id=${topicId}`);
+  }
+</script>
+
 <section class="section">
   <div class="container">
     <div class="content">
