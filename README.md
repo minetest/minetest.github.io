@@ -2,18 +2,25 @@
 
 The official Minetest website, living at [www.minetest.net](https://www.minetest.net).
 
-# Features
+## Features
 
-* Uses the [Bulma](https://bulma.io/) CSS framework.
-* Uses modern Web design techniques: `rem` units, `hsl` colors.
-* Responsive site and favicon.
+- Uses the [Bulma](https://bulma.io/) CSS framework.
+- Uses modern Web design techniques: `rem` units, `hsl` colors.
+- Responsive site and favicon.
 
-# Workflow
+## Workflow
 
 This site uses the [Jekyll](https://jekyllrb.com) static site generator.
-Use `jekyll serve` to automatically build the Jekyll site and serve it locally.
 
-# License
+- Ensure you have [Ruby](https://www.ruby-lang.org/) 2.4 or later installed.
+- Install [Bundler](https://bundler.io/) by running `gem install bundler`.
+  - On Linux, use a Ruby version manager such as [rbenv](https://github.com/rbenv/rbenv)
+    to easily switch to any version and avoid permission issues.
+- Install dependencies by running `bundle install`.
+- Use `bundle exec jekyll serve` to automatically build the site
+  and serve it locally.
+
+## License
 
 Copyright © 2015-2019 Hugo Locurcio and contributors
 
