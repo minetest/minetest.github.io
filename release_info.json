@@ -1,5 +1,3 @@
 ---
 ---
-{
-    "latest": {{ site.data.release | jsonify }}
-}
+{{ site.data.release | jsonify }}
