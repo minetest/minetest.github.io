@@ -1,5 +1,6 @@
 # www.minetest.net
 
+[![Build status](https://github.com/minetest/minetest.github.io/workflows/build/badge.svg)](https://github.com/minetest/minetest.github.io/actions)\
 The official Minetest website, living at [www.minetest.net](https://www.minetest.net).
 
 ## Features
