@@ -1,4 +1,6 @@
 latest:
   version: "5.2.0"
+  version_code: 5002000
   date: "2020-04-05"
   protocol_version: 39
+  url: "https://www.minetest.net/downloads/"

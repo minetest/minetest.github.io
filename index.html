@@ -25,7 +25,15 @@ redirect_from:
         </div>
         <p class="is-size-6">
           <span class="has-text-weight-bold">News:</span>
-            {{ site.data.release.latest.version }} released. ({{ site.data.release.latest.date | date_to_long_string }})
+            {% assign latest_version = site.data.release.latest %}
+            {{ latest_version.version }} released. ({{ latest_version.date | date: "%B " }}{% assign day = latest_version.date | date: "%-d"  %}
+            {% case day %}
+              {% when '1' or '21' or '31' %}{{ day }}<sup>st</sup>
+              {% when '2' or '22' %}{{ day }}<sup>nd</sup>
+              {% when '3' or '23' %}{{ day }}<sup>rd</sup>
+              {% else %}{{ day }}<sup>th</sup>
+            {% endcase %}
+            {{ latest_version.date | date: "%Y" }})
         </p>
       </div>
     </div>
