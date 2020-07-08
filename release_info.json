@@ -1,0 +1,4 @@
+---
+# Make Jekyll process this file
+---
+{{ site.data.release | jsonify }}

@@ -24,7 +24,11 @@ redirect_from:
           <a class="button is-primary is-size-5" href="{{ '/downloads/' | relative_url }}">Download</a>
         </div>
         <p class="is-size-6">
-          <span class="has-text-weight-bold">News:</span> 5.2.0 released. (April 5<sup>th</sup> 2020)
+          <span class="has-text-weight-bold">News:</span>
+          {% assign latest_version = site.data.release.latest %}
+          {{ latest_version.version }} released.
+
+          ({% include format_date.html date=latest_version.date %})
         </p>
       </div>
     </div>
