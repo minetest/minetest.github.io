@@ -1,4 +1,4 @@
-# www.minetest.net
+# [Minetest Website](https://www.minetest.net)
 
 [![Build status](https://github.com/minetest/minetest.github.io/workflows/build/badge.svg)](https://github.com/minetest/minetest.github.io/actions)\
 The official Minetest website, living at [www.minetest.net](https://www.minetest.net).
@@ -23,7 +23,7 @@ This site uses the [Jekyll](https://jekyllrb.com) static site generator.
 
 ## License
 
-Copyright © 2015-2019 Hugo Locurcio and contributors
+Copyright © 2015-2020 Hugo Locurcio and contributors
 
 Unless otherwise specified, code is licensed under the MIT license.
 Media and content are licensed under
