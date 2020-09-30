@@ -62,7 +62,7 @@ resources:
 - title: List of Mods for Education
   author: Various
   para: We have a large collection of educational mods, all of which are free and open source.
-  url: https://wiki.minetest.net/Mods:Learning
+  url: https://content.minetest.net/packages/?tag=education
 
 - title: Minetest Modding Book
   author: rubenwardy
