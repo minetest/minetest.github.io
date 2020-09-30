@@ -1,0 +1,85 @@
+why:
+- title: Free of Charge
+  para:  Minetest is <a href="/get-involved/">developed</a> by an
+         international network of <a href="/credits/">volunteer developers</a>.
+         You don't have to pay a license fee.
+
+- title: Easy Scripting
+  para: Minetest is not a game itself, but instead provides a Lua API which is used to create games and mods.
+        This makes creation and customisation super easy.
+
+- title: Customisable without Limits
+  para: You are not restricted by any EULA, and have full access to the source code.
+        Minetest is available under the LGPLv2.1+ license.
+
+- title: Runs well on old hardware
+  para: Minetest is written in a computer language that makes more efficient use of hardware,
+        allowing more schools to be able to experience interactive virtual learning.
+
+- title: Independent
+  para: Minetest is not associated with any company or commercial entity, which can make it
+        more suitable for adoption in organisations where this is a problem.
+
+- title: Friendly Community
+  para: You can find help with any problems on our <a href="/get-involved/">forums or IRC channels.</a>
+
+
+featured:
+- title: Craft the Web
+  author: CERN
+  tag: Unreleased
+  img: ctw.png
+  para: Learn what makes the Web function, and about the ideas and major inventions that paved its creation.
+  url: https://forum.minetest.net/viewtopic.php?t=22871
+
+- title: Framinetest
+  author: Framasoft
+  lang: fr
+  img: framinetest.png
+  para: An educational server, with geology, biology, and historical reconstruction to imagine your world!
+  url: https://framinetest.org
+
+- title: QiskitBlocks
+  author: James Weaver
+  img: qiskitblocks.png
+  para: Teaching Quantum Computing using Qiskit in a block world.
+  url: http://qiskitblocks.org
+
+# - title: Environmental Survival
+#   author: IMVEC
+#   img: imvec.png
+#   para: Teaches about polluting events, and gives the opportunity to imagine and build solutions.
+#   url: https://imvec.tech/kids/
+
+
+resources:
+- title: Edu Wiki
+  classes: is-primary
+  author: Various
+  para: There's a section of our wiki dedicated for education-related help.
+  url: https://wiki.minetest.net/MinetestEDU
+
+- title: List of Mods for Education
+  author: Various
+  para: We have a large collection of educational mods, all of which are free and open source.
+  url: https://wiki.minetest.net/Mods:Learning
+
+- title: Minetest Modding Book
+  author: rubenwardy
+  para: Learn how to use Minetest's Lua API to create mods and games.
+  url: https://rubenwardy.com/minetest_modding_book/
+
+- title: Google CTF Mesecons Challenge
+  author: Google
+  para: I've stumbled upon this weird Minetest map, can you make sense out of it?
+  url: https://capturetheflag.withgoogle.com/#challenges/hardware-minetest
+
+- title: Mining for Education
+  author: Paul Brown, OS Mag
+  para: An article explaining why you should use Minetest for education, and a guide in doing so.
+  url: http://www.ocsmag.com/2016/04/04/mining-for-education/
+
+- title: Learning with Minetest
+  author: Teacher Squeaks
+  para: A 3-part post-mortem based on the author's experience of using Minetest in a pre-school.
+  url: http://teachersqueaks.blogspot.co.za/2016/08/minewhat-rolling-out-minetest-in-pre.html
