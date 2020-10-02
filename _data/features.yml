@@ -41,7 +41,7 @@ developers:
     - title: Modding API
       description: >
         Use the same Lua API to make mods for any Minetest-based game.
-        Publish your mods on the [forums](https://forum.minetest.net),
+        Publish your mods on the [ContentDB](https://content.minetest.net),
         and contribute to others' mods.
 
     - title: Large Collection of Existing Mods
@@ -52,9 +52,7 @@ developers:
 
     - title: Friendly Community
       description: >
-        You can find help with any problems on our
-        [forums](https://forum.minetest.net) or
-        [IRC channels](/irc).
+        You can find help with any problems [from our community](/get-involved/).
 
     - title: Open Source
       description: >
