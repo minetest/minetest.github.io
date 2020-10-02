@@ -5,7 +5,8 @@ players:
       description: >
         There are many games to choose from. You could survive in a harsh
         environment, build creatively, or fight other players.
-        Just [download a game](/customize#games) or connect to a server.
+        Just [download a game](https://content.minetest.net/packages/?type=game)
+        or connect to a server.
 
     - title: Enormous Maps
       description: >
@@ -20,7 +21,7 @@ players:
     - title: Texture Packs
       description: >
         Not happy with the look of the textures?
-        [Change them!](/customize#texture-packs)
+        [Change them!](https://content.minetest.net/packages/?type=txp)
 
     - title: Beautiful Map Generators
       description: >
@@ -40,19 +41,18 @@ developers:
     - title: Modding API
       description: >
         Use the same Lua API to make mods for any Minetest-based game.
-        Publish your mods on the [forums](https://forum.minetest.net),
+        Publish your mods on the [ContentDB](https://content.minetest.net),
         and contribute to others' mods.
 
     - title: Large Collection of Existing Mods
       description: >
-        There are over 1,000 open source mods on [ContentDB](https://content.minetest.net)
-        which are ready to be used, adapted or learned from.
+        There are over 800 open source mods on
+        [ContentDB](https://content.minetest.net/),
+        which ready to be used, adapted or learned from.
 
     - title: Friendly Community
       description: >
-        You can find help with any problems on our
-        [forums](https://forum.minetest.net) or
-        [IRC channels](/irc).
+        You can find help with any problems [from our community](/get-involved/).
 
     - title: Open Source
       description: >
