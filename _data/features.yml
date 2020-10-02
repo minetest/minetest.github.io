@@ -41,14 +41,14 @@ developers:
     - title: Modding API
       description: >
         Use the same Lua API to make mods for any Minetest-based game.
-        Publish your mods on the [ContentDB](https://content.minetest.net),
+        Publish your mods on [ContentDB](https://content.minetest.net),
         and contribute to others' mods.
 
     - title: Large Collection of Existing Mods
       description: >
         There are over 800 open source mods on
         [ContentDB](https://content.minetest.net/),
-        which ready to be used, adapted or learned from.
+        which are ready to be used, adapted or learned from.
 
     - title: Friendly Community
       description: >
