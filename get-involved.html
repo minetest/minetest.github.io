@@ -34,39 +34,6 @@ redirect_from:
     <h2 id="contribute" class="title section-title">Contribute</h2>
     <div class="columns is-centered">
       <div class="column">
-        <h3 id="programmers" class="is-size-3">Programmers</h3>
-        <div class="content">
-          <ul>
-            <li>
-              Work on a <a href="https://dev.minetest.net/Modding_Intro">game or mod</a>,
-              and publish it on <a href="https://content.minetest.net">ContentDB</a>
-              or <a href="https://forum.minetest.net">the forums</a>.
-            </li>
-            <li>
-              Report bugs and submit patches on
-              <a href="https://github.com/minetest">GitHub</a> or <a href="https://wiki.minetest.net/IRC">IRC</a>.
-            </li>
-            <li>
-              <a href="https://forum.minetest.net/viewtopic.php?f=7&t=19877">Help us review and merge pull requests</a>.
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="column">
-        <h3 id="artists" class="is-size-3">Artists</h3>
-        <div class="content">
-          <ul>
-            <li>
-              Hang around on the forums, and help with
-              <a href="https://forum.minetest.net/viewtopic.php?f=47&t=1585">texture requests</a>.
-            </li>
-            <li>
-              Team up and create a new game.
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="column">
         <h3 id="everyone" class="is-size-3">Everyone</h3>
         <div class="content">
           <ul>
@@ -81,7 +48,54 @@ redirect_from:
               <a href="https://hosted.weblate.org/projects/minetest/minetest/">our web interface</a>.
             </li>
             <li>
+              <a href="https://forum.minetest.net/viewtopic.php?f=7&t=19877">Help us review and merge pull requests</a>.
+            </li>
+            <li>
               <a href="#donate">Donate</a> money to pay for infrastructure, and support your favourite contributors.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="column">
+        <h3 id="programmers" class="is-size-3">Programmers</h3>
+        <div class="content">
+          <ul>
+            <li>
+              Work on a <a href="https://dev.minetest.net/Modding_Intro">game or mod</a>
+              and publish it to <a href="https://content.minetest.net">ContentDB</a>.
+            </li>
+            <li>
+              Report bugs and submit patches on
+              <a href="https://github.com/minetest">GitHub</a> or <a href="https://wiki.minetest.net/IRC">IRC</a>.
+            </li>
+            <li>
+              Read the <a href="https://dev.minetest.net/Engine">engine</a>
+              documentation.
+            </li>
+            <li>
+              For good first tasks, look out for the Beginner Friendly label on the
+              <a href="https://github.com/minetest/minetest/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22Beginner+Friendly%22">engine</a>
+              or
+              <a href="https://github.com/minetest/minetest.github.io/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22Beginner+Friendly%22">website</a>
+              repositories.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="column">
+        <h3 id="artists" class="is-size-3">Artists</h3>
+        <div class="content">
+          <ul>
+            <li>
+              Team up and create a new game.
+            </li>
+            <li>
+              Create a
+              <a href="https://wiki.minetest.net/Texture_Packs">Texture Pack</a>.
+            </li>
+            <li>
+              Hang around on the forums, and help with
+              <a href="https://forum.minetest.net/viewtopic.php?f=47&t=1585">texture requests</a>.
             </li>
           </ul>
         </div>
@@ -97,14 +111,25 @@ redirect_from:
     <div class="content">
       <h3 class="is-size-3">The Process</h3>
       <p>
-        Upstream repositories and official Windows packages are handled by the
-        <a href="https://github.com/minetest?tab=members">core team</a>,
-        consisting of a bunch of people who are much trusted to keep Minetest progressing in good condition.
-        The core team is formed of people who have made great <a href="{{ '/credits/' | relative_url }}">contributions</a> to Minetest.
+        Minetest is developed and maintained by a group of volunteers called
+        the <a href="https://github.com/minetest?tab=members">core team</a>,
+        consisting of a bunch of people who are trusted to keep Minetest
+        progressing in good condition.
+        The core team is formed of people who have made great
+        <a href="{{ '/credits/' | relative_url }}">contributions</a> to Minetest.
         Contributions are approved if two members of the core team agree on them.
       </p>
       <p>
-        The core team is best contacted on <abbr title="Internet Relay Chat">IRC</abbr> at <code>#minetest-dev @ chat.freenode.net</code>.
+        All development and decisions are made in public, on
+        <a href="https://github.com/minetest">GitHub</a> and
+        <a href="https://wiki.minetest.net/IRC">Internet Relay Chat (IRC)</a>.
+        Meetings are occasionally held on IRC, with
+        <a href="https://dev.minetest.net/Meetings">plans and notes made public</a>.
+      </p>
+      <p>
+        The core team is best contacted on
+        <a href="https://wiki.minetest.net/IRC">IRC</a> at
+        <code>#minetest-dev @ chat.freenode.net</code>.
       </p>
       <p>
         For more information, take a look at
@@ -135,11 +160,26 @@ redirect_from:
       </ul>
 
       <p>
-        For more information see the
+        For more information, see the
         <a href="https://dev.minetest.net/Terminology">terminology</a> or
-        <a href="https://dev.minetest.net/Engine_structure">engine structure</a>
+        <a href="https://dev.minetest.net/Engine">engine overview</a>
         developer wiki pages.
       </p>
+
+      <h3 class="is-size-3">Roadmaps and Future Plans</h3>
+      <p>
+        As an open source project developed by volunteers, Minetest is
+        iteratively developed rather than formally planned. You can gain an idea
+        of the direction by looking into the following resources:
+      </p>
+      <ul>
+        <li><a href="https://forum.minetest.net/viewtopic.php?t=9177">celeron55's roadmap (project founder)</a></li>
+        <li><a href="https://dev.minetest.net/TODO">Long-term to-do list</a></li>
+        <li><a href="https://forum.minetest.net/viewforum.php?f=7">Core developer to-do/wish lists</a></li>
+        <li><a href="https://github.com/minetest/minetest/issues?q=is%3Aopen+sort%3Aupdated-desc+label%3A%22High+priority%22">
+          High-priority issues and pull requests
+        </a></li>
+      </ul>
     </div>
   </div>
 </section>
