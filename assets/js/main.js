@@ -1,17 +1,15 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
   // Handle mobile navigation bar toggling
-  const $navbarBurgers = Array.prototype.slice.call(
-    document.querySelectorAll('.navbar-burger'), 0
-  );
+  Array.prototype.forEach.call(
+    document.querySelectorAll('.navbar-burger'),
 
-  if ($navbarBurgers.length > 0) {
-    $navbarBurgers.forEach($element => {
-      $element.addEventListener('click', () => {
-        const $target = document.getElementById($element.dataset.target);
+    function($element) {
+      $element.addEventListener('click', function() {
+        var $target = document.getElementById($element.getAttribute('data-target'));
 
         $element.classList.toggle('is-active');
         $target.classList.toggle('is-active');
       });
-    });
-  }
+    }
+  );
 });
