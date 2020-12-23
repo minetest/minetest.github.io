@@ -17,3 +17,11 @@
 - name: Reddit
   url: https://reddit.com/r/minetest
   icon: reddit.png
+
+- name: Twitter
+  url: https://twitter.com/MinetestProject
+  icon: twitter.png
+
+- name: Discord
+  url: https://discord.gg/6W84ytH
+  icon: discord.png
