@@ -16,9 +16,11 @@ redirect_from:
 
 <section class="section">
   <div class="container">
-    <div class="columns is-centered iconlist">
-      {% for link in site.data.community %}
-      <a class="column has-text-centered no-underline hover-enlarge" href="{{ link.url }}">
+    {% assign rows = "community,social" | split: "," %}
+    {% for row in rows %}
+    <div class="columns is-variable is-8 is-centered iconlist">
+      {% for link in site.data[row] %}
+      <a class="column is-narrow has-text-centered no-underline hover-enlarge" href="{{ link.url }}">
         <div class="image">
           <img src="{{ '/media/logos/' | append: link.icon | relative_url }}" alt="{{ link.name }} logo">
         </div>
@@ -26,6 +28,7 @@ redirect_from:
       </a>
       {% endfor %}
     </div>
+    {% endfor %}
   </div>
 </section>
 
