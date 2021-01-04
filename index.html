@@ -73,7 +73,11 @@ redirect_from:
           <div class="card-image">
             <figure class="image is-16by9">
               <a href="{{ image.image | relative_url }}">
-                <img src="{{ image.image | replace: ".", "-thumb." | relative_url }}" alt="{{ image.title }}">
+                <img
+                  style="background-color: #ccc"
+                  src="{{ image.image | replace: ".", "-thumb." | relative_url }}"
+                  alt="{{ image.title }}"
+                >
               </a>
             </figure>
           </div>
