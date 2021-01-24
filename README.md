@@ -9,7 +9,7 @@ The official Minetest website, living at [www.minetest.net](https://www.minetest
 - Uses modern Web design techniques: `rem` units, `hsl` colors.
 - Responsive site and favicon.
 
-## Workflow
+## Development workflow
 
 This site uses the [Jekyll](https://jekyllrb.com) static site generator.
 
@@ -20,6 +20,19 @@ This site uses the [Jekyll](https://jekyllrb.com) static site generator.
 - Install dependencies by running `bundle install`.
 - Use `bundle exec jekyll serve` to automatically build the site
   and serve it locally.
+
+### Browser support
+
+When working on new features, keep in mind this website only supports
+*evergreen browsers*:
+
+- Chrome (two most recent versions)
+- Edge (two most recent versions)
+- Firefox (two most recent versions + latest ESR version)
+- Opera (two most recent versions)
+- Safari (two most recent versions)
+
+Internet Explorer isn't supported.
 
 ## License
 
