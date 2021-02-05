@@ -1,6 +1,10 @@
-- name: Reddit
-  url: https://reddit.com/r/minetest
-  icon: reddit.png
+- name: Matrix
+  url: https://matrix.to/#/+minetest:tchncs.de
+  icon: matrix.png
+
+- name: Mastodon
+  url: https://fosstodon.org/@minetest
+  icon: mastodon.png
 
 - name: Twitter
   url: https://twitter.com/MinetestProject
@@ -10,10 +14,6 @@
   url: https://discord.gg/6W84ytH
   icon: discord.png
 
-- name: Mastodon
-  url: https://fosstodon.org/@minetest
-  icon: mastodon.png
-
-- name: Matrix
-  url: https://matrix.to/#/+minetest:tchncs.de
-  icon: matrix.png
+- name: Reddit
+  url: https://reddit.com/r/minetest
+  icon: reddit.png
