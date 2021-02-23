@@ -13,7 +13,3 @@
 - name: Servers
   url: /servers/
   icon: servers.svg
-
-- name: Reddit
-  url: https://reddit.com/r/minetest
-  icon: reddit.png
