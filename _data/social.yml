@@ -12,7 +12,7 @@
 
 - name: Discord
   url: https://discord.gg/minetest
-  icon: discord.png
+  icon: discord.svg
 
 - name: Reddit
   url: https://reddit.com/r/minetest
