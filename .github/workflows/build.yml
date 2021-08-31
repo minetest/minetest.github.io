@@ -18,7 +18,8 @@ jobs:
     - name: Install dependencies
       run: |
        sudo apt-get install libcurl4-openssl-dev
-       bundle install --jobs=3 --retry=3 --deployment
+       bundle config set --local deployment 'true'
+       bundle install --jobs=3 --retry=3
     - name: Run tests
       run: |
        bundle exec jekyll build
