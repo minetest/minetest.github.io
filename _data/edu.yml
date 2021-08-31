@@ -74,11 +74,6 @@ resources:
   para: I've stumbled upon this weird Minetest map, can you make sense out of it?
   url: https://capturetheflag.withgoogle.com/#challenges/hardware-minetest
 
-- title: Mining for Education
-  author: Paul Brown, OS Mag
-  para: An article explaining why you should use Minetest for education, and a guide in doing so.
-  url: http://www.ocsmag.com/2016/04/04/mining-for-education/
-
 - title: Learning with Minetest
   author: Teacher Squeaks
   para: A 3-part post-mortem based on the author's experience of using Minetest in a pre-school.
