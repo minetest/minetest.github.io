@@ -88,33 +88,32 @@ redirect_from:
       <div class="column is-12-tablet is-6-desktop">
         <h2>Linux</h2>
         <h3>Packages</h3>
-        <p>Those may be out of date at times. If they are too out of date, you can build from source.</p>
+        <p>These may be out of date at times. If they are too out of date, consider building from source.</p>
 
         <ul>
           <li class="has-text-weight-bold">Flatpak (all distributions) -
               <a href="https://flathub.org/apps/details/net.minetest.Minetest">Stable</a></li>
           <li class="has-text-weight-bold">Snap (all distributions) -
               <a href="https://snapcraft.io/minetest">Stable</a></li>
-          <li>Debian -
-              <a href="https://packages.debian.org/search?keywords=minetest">Stable</a></li>
           <li>Ubuntu -
               <a href="https://packages.ubuntu.com/search?keywords=minetest">Stable</a></li>
-          <li>Ubuntu / Linux Mint (PPA) -
-              <a href="https://launchpad.net/~minetestdevs/+archive/ubuntu/stable">Stable</a>,
-              <a href="https://code.launchpad.net/~minetestdevs/+archive/daily-builds/+packages">Unstable</a></li>
+          <li>Debian -
+              <a href="https://packages.debian.org/search?keywords=minetest">Stable</a></li>
+          <li>Arch Linux -
+              <a href="https://archlinux.org/packages/?q=minetest">Stable</a>,
+              <a href="https://aur.archlinux.org/packages/minetest-git/">Unstable (AUR)</a></li>
           <li>Fedora -
               <a href="https://src.fedoraproject.org/rpms/minetest">Stable</a></li>
           <li>openSUSE -
               <a href="https://software.opensuse.org/package/minetest">Stable</a></li>
           <li>Mageia -
               <a href="https://madb.mageia.org/package/show/name/minetest">Stable</a></li>
-          <li>Arch Linux -
-              <a href="https://www.archlinux.org/packages/?q=minetest">Stable</a>,
-              <a href="https://aur.archlinux.org/packages/minetest-git-leveldb/">Unstable</a></li>
           <li>Gentoo -
               <a href="https://packages.gentoo.org/package/games-action/minetest">Stable</a></li>
           <li>Void Linux -
               <a href="https://github.com/void-linux/void-packages/tree/master/srcpkgs/minetest">Stable</a></li>
+          <li>Alpine Linux -
+             <a href="https://pkgs.alpinelinux.org/packages?name=minetest">Stable</a></li>
         </ul>
       </div>
 
@@ -124,7 +123,7 @@ redirect_from:
         <p>On FreeBSD 9.1 and newer, you can use the official pre-built packages:
             <code>pkg install minetest minetest_game</code></p>
         <h3>Compile using ports</h3>
-        <p>You can compile Minetest and choose build options easily using the FreeBSD port dialogs.</p>
+        <p>You can also compile Minetest and choose build options easily using the FreeBSD port dialogs.</p>
         <pre>
 cd /usr/ports/games/minetest
 make install
@@ -142,6 +141,9 @@ make install
             <code>brew install minetest</code>
           </li>
           <li>
+            <a href="https://www.macports.org/">MacPorts</a> also contains a port of the stable version:<br>
+            <code>sudo port install minetest</code>
+          <li>
             <a href="https://forum.minetest.net/viewtopic.php?t=9190">Daily unstable builds</a>
           </li>
         </ul>
@@ -152,12 +154,12 @@ make install
         <p>
           Get the latest <a href="https://github.com/minetest/minetest/tree/stable-5">stable</a>
           or <a href="https://github.com/minetest/minetest">development</a> source code from
-          <a href="https://github.com/minetest/minetest">GitHub</a>.<br>
+          <a href="https://github.com/minetest">GitHub</a>.<br>
           You will probably want <a href="https://github.com/minetest/minetest_game">Minetest Game</a> as well.
           Put the game in your games directory.
         </p>
         <p>
-          See <a href="https://github.com/minetest/minetest/blob/master/README.md">README.md</a>
+          See the <a href="https://github.com/minetest/minetest/blob/master/README.md">README</a>
           for details on how to compile Minetest from source.
         </p>
 
