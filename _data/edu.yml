@@ -69,10 +69,10 @@ resources:
   para: Learn how to use Minetest's Lua API to create mods and games.
   url: https://rubenwardy.com/minetest_modding_book/
 
-- title: Google CTF Mesecons Challenge
-  author: Google
-  para: I've stumbled upon this weird Minetest map, can you make sense out of it?
-  url: https://capturetheflag.withgoogle.com/#challenges/hardware-minetest
+- title: Mining for Education
+  author: Paul Brown, OS Mag
+  para: An article explaining why you should use Minetest for education, and a guide in doing so.
+  url: https://www.ocsmag.com/mining-for-education/
 
 - title: Learning with Minetest
   author: Teacher Squeaks
