@@ -13,6 +13,8 @@ The official Minetest website, living at [www.minetest.net](https://www.minetest
 
 This site uses the [Jekyll](https://jekyllrb.com) static site generator.
 
+- Alternatively, skip all of the steps below by using Gitpod, which would automatically do all of that for you: [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/minetest/minetest.github.io)
+
 - Ensure you have [Ruby](https://www.ruby-lang.org/) 2.4 or later installed.
 - Install [Bundler](https://bundler.io/) by running `gem install bundler`.
   - On Linux, use a Ruby version manager such as [rbenv](https://github.com/rbenv/rbenv)

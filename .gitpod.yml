@@ -1,0 +1,24 @@
+# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+  - name: jekyll
+    init: gem install bundler
+    command: bundle install && bundle exec jekyll server
+
+# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+ports:
+  - port: 4000
+    onOpen: open-preview
+
+github:
+  prebuilds:
+    addBadge: true
+    addComment: false
+    addCheck: true
+    master: true
+    branches: true
+    pullRequestsFromForks: true
+
+vscode:
+  extensions:
+    - davidanson.vscode-markdownlint
+    - eliostruyf.vscode-front-matter
