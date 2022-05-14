@@ -1,0 +1,11 @@
+.blog-embed {
+	// position: relative;
+	text-align: center;
+
+	iframe {
+		width: 100%;
+		height: 230px;
+		max-width: 960px;
+		margin: none auto;
+	}
+}
