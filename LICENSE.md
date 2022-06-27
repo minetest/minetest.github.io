@@ -20,3 +20,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+Screenshots from:
+- RPG16 texture pack (Hugues Ross)
+- Soothing32 (Zughy)
+- Minetest Game
+- Mineclone2 (Wuzzy)
+- i3 (Jean-Patrick Guerrero)
+- Animalia (ElCeejo)
