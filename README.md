@@ -48,6 +48,6 @@ Screenshots from:
 - rpg16.jpg, RPG16 texture pack (Hugues Ross), CC BY-SA 4.0
 - soothing32.jpg, Soothing32 (Zughy), CC BY-SA 4.0
 - i3.jpg, i3 (Jean-Patrick Guerrero), CC BY-SA 3.0
-- mineclone2.jpg, Mineclone2 (Wuzzy), GPL 3.0.
+- mineclone2.jpg, Mineclone2 (Wuzzy)
 - airship.jpg, Steampunk Blimp (APercy), CC BY-SA 3.0
 - animalia.jpg, Animalia (ElCeejo), MIT
