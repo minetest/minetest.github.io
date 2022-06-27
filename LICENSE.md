@@ -23,7 +23,7 @@ SOFTWARE.
 Screenshots from:
 - RPG16 texture pack (Hugues Ross)
 - Soothing32 (Zughy)
-- Minetest Game
-- Mineclone2 (Wuzzy)
 - i3 (Jean-Patrick Guerrero)
+- Mineclone2 (Wuzzy)
+- Steampunk Blimp (APercy)
 - Animalia (ElCeejo)
