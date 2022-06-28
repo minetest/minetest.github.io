@@ -2,22 +2,22 @@
   title: A castle in Minetest Game, the default game
 
 - image: /media/gallery/2.jpg
-  title: "[RPG-16](https://content.minetest.net/packages/Hugues%20Ross/rpg16/) texture pack"
-
-- image: /media/gallery/soothing32.jpg
   title: "[Soothing32](https://content.minetest.net/packages/Zughy/soothing32/) texture pack"
 
-- image: /media/gallery/i3.jpg
+- image: /media/gallery/3.jpg
   title: "Customized inventory screen from the [i3](https://content.minetest.net/packages/jp/i3/) mod"
 
-- image: /media/gallery/mineclone2.jpg
+- image: /media/gallery/4.jpg
   title: "[Mineclone2](https://content.minetest.net/packages/Wuzzy/mineclone2/) game"
 
-- image: /media/gallery/mtg_sea.jpg
-  title: An underwater jungle in Minetest Game
-
-- image: /media/gallery/3.jpg
+- image: /media/gallery/5.jpg
   title: "[Steampunk Blimp](https://content.minetest.net/packages/apercy/steampunk_blimp/) mod for Minetest Game"
 
-- image: /media/gallery/animalia.jpg
+- image: /media/gallery/6.jpg
   title: "[Animalia](https://content.minetest.net/packages/ElCeejo/animalia/) mod"
+
+- image: /media/gallery/7.jpg
+  title: "[RPG-16](https://content.minetest.net/packages/Hugues%20Ross/rpg16/) texture pack"
+
+- image: /media/gallery/8.jpg
+  title: An underwater jungle in Minetest Game
