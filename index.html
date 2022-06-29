@@ -80,21 +80,17 @@ redirect_from:
       {% endcomment %}
 
       {% for image in site.data.gallery %}
-      <div class="column is-6">
-        <div class="card">
-          <div class="card-image">
-            <figure class="image is-16by9">
-              <a href="{{ image.image | relative_url }}">
-                <img
-                  style="background-color: #ccc"
-                  src="{{ image.image | replace: ".", "-thumb." | relative_url }}"
-                  alt="{{ image.title }}"
-                >
-              </a>
-            </figure>
-          </div>
-        </div>
-      </div>
+        <figure class="column is-half">
+          <a class="image is-16by9" href="{{ image.image | relative_url }}">
+            <img
+              style="background-color: #ccc"
+              src="{{ image.image | replace: ".", "-thumb." | relative_url }}"
+              alt="{{ image.title }}">
+          </a>
+          {% if image.title %}
+            <figcaption>{{ image.title | markdownify }}</figcaption>
+          {% endif %}
+        </figure>
       {% endfor %}
     </div>
   </div>

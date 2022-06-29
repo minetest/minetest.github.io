@@ -39,5 +39,16 @@ Internet Explorer isn't supported.
 Copyright © 2015-2020 Hugo Locurcio and contributors
 
 Unless otherwise specified, code is licensed under the MIT license.
-Media and content are licensed under
+Media (except gallery) and content are licensed under
 [CC BY-SA 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
+
+Gallery screenshots are by various authors and depict various content
+
+- 1: Minetest Game
+- 2: Soothing32 (Zughy)
+- 3: i3 (Jean-Patrick Guerrero)
+- 4: Mineclone2 (Wuzzy)
+- 5: Steampunk Blimp (APercy)
+- 6: Animalia (ElCeejo)
+- 7: RPG16 texture pack (Hugues Ross)
+- 8: Minetest Game
