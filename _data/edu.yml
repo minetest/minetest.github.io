@@ -25,13 +25,6 @@ why:
 
 
 featured:
-- title: Craft the Web
-  author: CERN
-  tag: Unreleased
-  img: ctw.png
-  para: Learn what makes the Web function, and about the ideas and major inventions that paved its creation.
-  url: https://forum.minetest.net/viewtopic.php?t=22871
-
 - title: Framinetest
   author: Framasoft
   lang: fr
@@ -45,14 +38,26 @@ featured:
   para: Teaching Quantum Computing using Qiskit in a block world.
   url: https://content.minetest.net/packages/JavaFXpert/qiskitblocks/
 
-# - title: Environmental Survival
-#   author: IMVEC
-#   img: imvec.png
-#   para: Teaches about polluting events, and gives the opportunity to imagine and build solutions.
-#   url: https://imvec.tech/kids/
+- title: Craft the Web
+  author: CERN
+  tag: Unreleased
+  img: ctw.png
+  para: Learn what makes the Web function, and about the ideas and major inventions that paved its creation.
+  url: https://forum.minetest.net/viewtopic.php?t=22871
 
 
 resources:
+
+- title: BLOCKALOT
+  author: Landesmedienzentrum Baden-Württemberg
+  lang: de
+  img: imvec.png
+  para: >
+    A dashboard to create worlds for future-oriented learning without hosting
+    servers. Comes with support (in English/French/German), a wiki and
+    workshops. It's currently free to use.
+  url: https://imvec.tech/kids/
+
 - title: Edu Wiki
   classes: is-primary
   author: Various
