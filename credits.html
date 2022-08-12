@@ -12,41 +12,38 @@ redirect_from:
       <div class="column is-10 is-9-desktop is-8-widescreen is-7-fullhd content">
 
         <h1>Credits</h1>
-        <h2>Core Developers</h2>
+
+        <h2>Core Team</h2>
         <p>
-          Core developers are contributors with special privileges and responsibilities.
-          They decide what can be added to Minetest by voting for and against pull requests.
-          They also have access to the Minetest team's repositories on GitHub.
+          The core team consists of contributors with special privileges and
+          responsibilities.
+        </p>
+        <p>
+          Core developers decide what can be added to Minetest by voting for
+          and against pull requests. They also have commit access to the Minetest
+          team's repositories on GitHub.
           <a href="https://dev.minetest.net/Organisation">Learn more.</a>
         </p>
 
-        <h3>Active</h3>
+        <h3>Active Core Developers</h3>
         <ul>
-          <li>Perttu Ahola (celeron55) &#x3C;<a href="mailto:&#x63;&#x65;&#x6C;&#x65;&#x72;&#x6F;&#x6E;&#x35;&#x35;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;" title="&#x63;&#x65;&#x6C;&#x65;&#x72;&#x6F;&#x6E;&#x35;&#x35;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;">&#x63;&#x65;&#x6C;&#x65;&#x72;&#x6F;&#x6E;&#x35;&#x35;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;</a>&#x3E;</li>
-          <li>sfan5 &#x3C;<a href="mailto:&#x73;&#x66;&#x61;&#x6E;&#x35;&#x40;&#x6C;&#x69;&#x76;&#x65;&#x2E;&#x64;&#x65;" title="&#x73;&#x66;&#x61;&#x6E;&#x35;&#x40;&#x6C;&#x69;&#x76;&#x65;&#x2E;&#x64;&#x65;">&#x73;&#x66;&#x61;&#x6E;&#x35;&#x40;&#x6C;&#x69;&#x76;&#x65;&#x2E;&#x64;&#x65;</a>&#x3E;</li>
-          <li>Nathanael Courant (Nore/Ekdohibs) &#x3C;<a href="mailto:&#x6E;&#x6F;&#x72;&#x65;&#x40;&#x6D;&#x65;&#x73;&#x65;&#x63;&#x6F;&#x6E;&#x73;&#x2E;&#x6E;&#x65;&#x74;" title="&#x6E;&#x6F;&#x72;&#x65;&#x40;&#x6D;&#x65;&#x73;&#x65;&#x63;&#x6F;&#x6E;&#x73;&#x2E;&#x6E;&#x65;&#x74;">&#x6E;&#x6F;&#x72;&#x65;&#x40;&#x6D;&#x65;&#x73;&#x65;&#x63;&#x6F;&#x6E;&#x73;&#x2E;&#x6E;&#x65;&#x74;</a>&#x3E;</li>
-          <li>Loic Blot (nerzhul/nrz) &#x3C;<a href="mailto:&#x6C;&#x6F;&#x69;&#x63;&#x2E;&#x62;&#x6C;&#x6F;&#x74;&#x40;&#x75;&#x6E;&#x69;&#x78;&#x2D;&#x65;&#x78;&#x70;&#x65;&#x72;&#x69;&#x65;&#x6E;&#x63;&#x65;&#x2E;&#x66;&#x72;" title="&#x6C;&#x6F;&#x69;&#x63;&#x2E;&#x62;&#x6C;&#x6F;&#x74;&#x40;&#x75;&#x6E;&#x69;&#x78;&#x2D;&#x65;&#x78;&#x70;&#x65;&#x72;&#x69;&#x65;&#x6E;&#x63;&#x65;&#x2E;&#x66;&#x72;">&#x6C;&#x6F;&#x69;&#x63;&#x2E;&#x62;&#x6C;&#x6F;&#x74;&#x40;&#x75;&#x6E;&#x69;&#x78;&#x2D;&#x65;&#x78;&#x70;&#x65;&#x72;&#x69;&#x65;&#x6E;&#x63;&#x65;&#x2E;&#x66;&#x72;</a>&#x3E;</li>
-          <li>paramat</li>
-          <li>Auke Kok (sofar)</li>
-          <li>Andrew Ward (rubenwardy) &#x3C;<a href="https://rubenwardy.com/contact/">Contact</a>&#x3E;</li>
-          <li>Krock/SmallJoker</li>
-          <li>Lars Hofhansl</li>
+          {% for x in site.data.credits.active_core_devs %}
+          <li>{{ x }}</li>
+          {% endfor %}
         </ul>
 
-        <h3>Previous</h3>
+        <h3>Active Core Team Members</h3>
         <ul>
-          <li>BlockMen</li>
-          <li>Maciej Kasatkin (RealBadAngel)</li>
-          <li>Lisa Milne (darkrose)</li>
-          <li>proller</li>
-          <li>Ilya Zhuravlev (xyz)</li>
-          <li>PilzAdam &#x3C;<a href="mailto:&#x70;&#x69;&#x6c;&#x7a;&#x61;&#x64;&#x61;&#x6d;&#x40;&#x6d;&#x69;&#x6e;&#x65;&#x74;&#x65;&#x73;&#x74;&#x2e;&#x6e;&#x65;&#x74;" title="&#x70;&#x69;&#x6c;&#x7a;&#x61;&#x64;&#x61;&#x6d;&#x40;&#x6d;&#x69;&#x6e;&#x65;&#x74;&#x65;&#x73;&#x74;&#x2e;&#x6e;&#x65;&#x74;">&#x70;&#x69;&#x6c;&#x7a;&#x61;&#x64;&#x61;&#x6d;&#x40;&#x6d;&#x69;&#x6e;&#x65;&#x74;&#x65;&#x73;&#x74;&#x2e;&#x6e;&#x65;&#x74;</a>&#x3E;</li>
-          <li>est31 &#x3C;<a href="mailto:&#x4D;&#x54;&#x65;&#x73;&#x74;&#x33;&#x31;&#x40;&#x6F;&#x75;&#x74;&#x6C;&#x6F;&#x6F;&#x6B;&#x2E;&#x63;&#x6F;&#x6D;" title="&#x4D;&#x54;&#x65;&#x73;&#x74;&#x33;&#x31;&#x40;&#x6F;&#x75;&#x74;&#x6C;&#x6F;&#x6F;&#x6B;&#x2E;&#x63;&#x6F;&#x6D;">&#x4D;&#x54;&#x65;&#x73;&#x74;&#x33;&#x31;&#x40;&#x6F;&#x75;&#x74;&#x6C;&#x6F;&#x6F;&#x6B;&#x2E;&#x63;&#x6F;&#x6D;</a>&#x3E;</li>
-          <li>kahrl &#x3C;<a href="mailto:&#x6B;&#x61;&#x68;&#x72;&#x6C;&#x40;&#x67;&#x6D;&#x78;&#x2E;&#x6E;&#x65;&#x74;" title="&#x6B;&#x61;&#x68;&#x72;&#x6C;&#x40;&#x67;&#x6D;&#x78;&#x2E;&#x6E;&#x65;&#x74;">&#x6B;&#x61;&#x68;&#x72;&#x6C;&#x40;&#x67;&#x6D;&#x78;&#x2E;&#x6E;&#x65;&#x74;</a>&#x3E;</li>
-          <li>Ryan Kwolek (kwolekr) &#x3C;<a href="mailto:&#x6b;&#x77;&#x6f;&#x6c;&#x65;&#x6b;&#x72;&#x40;&#x6d;&#x69;&#x6e;&#x65;&#x74;&#x65;&#x73;&#x74;&#x2e;&#x6e;&#x65;&#x74;" title="&#x6b;&#x77;&#x6f;&#x6c;&#x65;&#x6b;&#x72;&#x40;&#x6d;&#x69;&#x6e;&#x65;&#x74;&#x65;&#x73;&#x74;&#x2e;&#x6e;&#x65;&#x74;">&#x6b;&#x77;&#x6f;&#x6c;&#x65;&#x6b;&#x72;&#x40;&#x6d;&#x69;&#x6e;&#x65;&#x74;&#x65;&#x73;&#x74;&#x2e;&#x6e;&#x65;&#x74;</a>&#x3E;</li>
-          <li>sapier</li>
-          <li>Zeno</li>
-          <li>ShadowNinja &#x3C;<a href="mailto:&#x73;&#x68;&#x61;&#x64;&#x6F;&#x77;&#x6E;&#x69;&#x6E;&#x6A;&#x61;&#x40;&#x6D;&#x69;&#x6E;&#x65;&#x74;&#x65;&#x73;&#x74;&#x2E;&#x6E;&#x65;&#x74;" title="&#x73;&#x68;&#x61;&#x64;&#x6F;&#x77;&#x6E;&#x69;&#x6E;&#x6A;&#x61;&#x40;&#x6D;&#x69;&#x6E;&#x65;&#x74;&#x65;&#x73;&#x74;&#x2E;&#x6E;&#x65;&#x74;">&#x73;&#x68;&#x61;&#x64;&#x6F;&#x77;&#x6E;&#x69;&#x6E;&#x6A;&#x61;&#x40;&#x6D;&#x69;&#x6E;&#x65;&#x74;&#x65;&#x73;&#x74;&#x2E;&#x6E;&#x65;&#x74;</a>&#x3E;</li>
+          {% for x in site.data.credits.active_core_team %}
+          <li>{{ x }}</li>
+          {% endfor %}
+        </ul>
+
+        <h3>Previous Core Developers</h3>
+        <ul>
+          {% for x in site.data.credits.previous_core_devs %}
+          <li>{{ x }}</li>
+          {% endfor %}
         </ul>
 
         <hr>
@@ -60,46 +57,16 @@ redirect_from:
 
         <h3>Active</h3>
         <ul>
-          <li>Hugues Ross [Formspecs]</li>
-          <li>Maksim (MoNTE48) [Android]</li>
-          <li>DS [Formspecs]</li>
-          <li>pyrollo [Formspecs: Hypertext]</li>
-          <li>v-rob [Formspecs]</li>
-          <li>Jordach [set_sky]</li>
-          <li>random-geek [Formspecs]</li>
-          <li>Wuzzy [Pathfinder, builtin, translations]</li>
-          <li>ANAND (ClobberXD) [Fixes, per-player FOV]</li>
-          <li>Warr1024 [Fixes]</li>
-          <li>Paul Ouellette (pauloue) [Fixes, Script API]</li>
-          <li>Jean-Patrick G (kilbith) [Audiovisuals]</li>
-          <li>HybridDog [Script API]</li>
-          <li>dcbrwn [Object shading]</li>
-          <li>srifqi [Fixes]</li>
+          {% for x in site.data.credits.active_contributors %}
+          <li>{{ x }}</li>
+          {% endfor %}
         </ul>
 
         <h3>Previous</h3>
         <ul>
-          <li>Nils Dagsson Moskopp (erlehmann) [Minetest Logo]</li>
-          <li>Dániel Juhász (juhdanad)</li>
-          <li>red-001</li>
-          <li>numberZero [Audiovisuals: meshgen]</li>
-          <li>Giuseppe Bilotta</li>
-          <li>MirceaKitsune</li>
-          <li>Constantin Wenger (SpeedProg)</li>
-          <li>Ciaran Gultnieks (CiaranG)</li>
-          <li>stujones11 [Android UX improvements]</li>
-          <li>Jeija [HTTP, particles]</li>
-          <li>Vincent Glize (Dumbeldor) [Cleanups, CSM APIs]</li>
-          <li>Ben Deutsch [Rendering, Fixes, SQLite auth]</li>
-          <li>TeTpaAka [Hand overriding, nametag colors]</li>
-          <li>Rui [Sound Pitch]</li>
-          <li>Duane Robertson [MGValleys]</li>
-          <li>Raymoo [Tool Capabilities]</li>
-          <li>Rogier [Fixes]</li>
-          <li>Gregory Currie (gregorycu) [optimisation]</li>
-          <li>TriBlade9 [Audiovisuals]</li>
-          <li>T4im [Profiler]</li>
-          <li>Jurgen Doser (doserj)</li>
+          {% for x in site.data.credits.previous_contributors %}
+          <li>{{ x }}</li>
+          {% endfor %}
         </ul>
 
         <p class="has-text-weight-bold">
