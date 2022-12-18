@@ -6,10 +6,6 @@
   url: https://fosstodon.org/@minetest
   icon: mastodon.png
 
-- name: Twitter
-  url: https://twitter.com/MinetestProject
-  icon: twitter.png
-
 - name: Discord
   url: https://discord.gg/minetest
   icon: discord.svg
