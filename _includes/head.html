@@ -39,3 +39,7 @@
     g.type="text/javascript"; g.async=true; g.defer=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
   })();
 </script>
+{% if page.title == "Downloads" %}
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="{{ '/assets/js/windows_binaries_download_chart.js' | relative_url }}"></script>
+{% endif %}
