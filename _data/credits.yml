@@ -33,13 +33,13 @@ previous_core_devs: [
   "Aaron Suen",
   "paramat",
   "Pierre-Yves Rollo",
+  "Jude Melton-Houghton [Optimizations, bugfixes]",
 ]
 
 
 active_contributors: [
   "Wuzzy [Features, translations, devtest]",
   "Lars Müller [Lua optimizations and fixes]",
-  "Jude Melton-Houghton [Optimizations, bugfixes]",
   "paradust7 [Performance, fixes, Irrlicht refactoring]",
   "Desour [Fixes]",
   "ROllerozxa [Main menu]",
