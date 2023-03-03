@@ -46,7 +46,7 @@ developers:
 
     - title: Large Collection of Existing Mods
       description: >
-        There are over 1100 open source mods on
+        There are over 1100 free software mods on
         [ContentDB](https://content.minetest.net/),
         which are ready to be used, adapted or learned from.
 
@@ -54,8 +54,8 @@ developers:
       description: >
         You can find help with any problems [from our community](/get-involved/).
 
-    - title: Open Source
+    - title: Free Software
       description: >
-        The engine is open source and transparently developed.
+        The engine is free software, copyleft and transparently developed.
         [Submit an issue](https://github.com/minetest/minetest/issues)
         for anything you're missing, or get the source code and dig into it yourself.
