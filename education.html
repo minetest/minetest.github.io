@@ -7,30 +7,32 @@ layout: default
 
 <section class="section">
 	<div class="container">
-		<h1 id="why" class="title">Why Minetest?</h1>
-		<h6 class="subtitle is-6">
-			We asked some educators why, and here's what
-			<a href="https://web.archive.org/web/20221218200032/https://twitter.com/MinetestProject/status/1147812428647936001">they said</a>.
-		</h6>
-
+		<h2 id="why" class="title">Why Minetest?</h2>
 		<div class="columns is-multiline">
 			{% for point in site.data.edu.why %}
 				<div class="column is-one-third">
-					<h2 class="title is-4">{{ point.title }}</h2>
+					<h3 class="title is-4">{{ point.title }}</h3>
 					<p>
 						{{ point.para }}
 					</p>
 				</div>
 			{% endfor %}
 		</div>
+
+		<p class="has-text-centered footnote">
+			<small>
+				The above is based on the
+				<a href="https://web.archive.org/web/20221218200032/https://twitter.com/MinetestProject/status/1147812428647936001">responses</a>
+				of educators using Minetest.
+			</small>
+		</p>
 	</div>
 </section>
 
 
-<section class="section" style="background-color: #f0f0f0;">
+<section id="projects" class="section" style="background-color: #f0f0f0;">
 	<div class="container">
-		<h1 id="featured" class="title">Featured Projects</h1>
-		<h6 class="subtitle is-6">Existing educational projects that use Minetest.</h6>
+		<h2 class="title">Projects</h2>
 
 		<div class="columns is-multiline">
 			{% for point in site.data.edu.featured %}
@@ -64,8 +66,7 @@ layout: default
 
 <section class="section">
 	<div class="container">
-		<h1 id="resources" class="title">Resources</h1>
-		<h6 class="subtitle is-6">Leverage the community.</h6>
+		<h2 id="resources" class="title">Resources</h2>
 
 		<div class="columns is-multiline">
 			{% for point in site.data.edu.resources %}
