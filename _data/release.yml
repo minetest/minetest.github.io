@@ -1,6 +1,6 @@
 latest:
-  version: "5.6.1"
-  version_code: 5006001
-  date: "2022-09-19"
-  protocol_version: 41
+  version: "5.7.0"
+  version_code: 5007000
+  date: "2023-04-08"
+  protocol_version: 42
   url: "https://www.minetest.net/downloads/"
