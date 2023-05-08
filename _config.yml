@@ -1,6 +1,7 @@
 permalink: pretty
 plugins:
   - jekyll-redirect-from
+  - jekyll-sitemap
 sass:
   style: compressed
 exclude:
