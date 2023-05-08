@@ -1,12 +1,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>
-  {% if page.homepage %}
-    Minetest - {{ page.title }}
-  {% else %}
-    {{ page.title }} - Minetest
-  {% endif %}
+    {{ page.title }}
+    {% unless page.title_append == false %}- Minetest {% endunless %}
 </title>
+<link rel="canonical" href="https://www.minetest.net{{ page.url }}">
+<meta name="og:url" content="https://www.minetest.net{{ page.url }}">
+<meta name="og:title" content="{{ page.title | escape }}">
+<meta name="og:site_name" content="Minetest">
+{% if page.description %}
+  <meta name="og:description" content="{{ page.description | escape | strip }}">
+  <meta name="description" content="{{ page.description | escape | strip }}">
+{% endif %}
+{% if page.image %}
+  <meta name="og:image" content="{{ page.image | absolute_url }}">
+{% endif %}
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 <link rel="apple-touch-icon" sizes="57x57" href="{{ '/media/favicon/57x57.png' | relative_url }}">
 <link rel="apple-touch-icon" sizes="60x60" href="{{ '/media/favicon/60x60.png' | relative_url }}">
