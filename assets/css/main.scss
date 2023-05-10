@@ -1,9 +1,8 @@
 ---
-# This ensures that Jekyll reads this file
 ---
 
 @import "bulma-variables"; // Variables overriding Bulma defaults
-@import "bulma"; // Bulma CSS framework
+@import "bulma/bulma"; // Bulma CSS framework
 @import "fonts"; // Fonts (currently Titillium Web)
 
 @import "base";
