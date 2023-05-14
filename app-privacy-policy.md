@@ -95,8 +95,6 @@ The following information will be transferred or included:
 * Minetest version
 * Platform, OS, device, etc
 
-ContentDB will know which packages you view and/or download.
-
 ### How it is used
 
 HTTP requests are logged to aid with debugging, development, and aggregated
@@ -108,7 +106,8 @@ package and release, and there are also download graphs available for each
 package.
 
 Whether an IP address has downloaded a package or release is cached to prevent
-downloads from being counted multiple times per IP address.
+downloads from being counted multiple times per IP address, but this information
+is deleted regularly.
 
 ### Who has access
 
