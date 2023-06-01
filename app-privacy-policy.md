@@ -2,7 +2,7 @@
 title: Minetest Privacy Policy
 description: Privacy policy for the Minetest application.
 small: |
-  Last updated: 2023-05-14
+  Last updated: 2023-06-02
   (<a href="https://github.com/minetest/minetest.github.io/commits/master/app-privacy-policy.md">View updates</a>)
 layout: page_subtitle
 ---
@@ -55,19 +55,17 @@ The following information will be transferred or included:
 
 * IP address
 * Minetest version
-* Platform, OS, device, etc
+* Platform and Operating System
 
 ### How it is used
 
 HTTP requests are logged to aid with debugging, development and user
-support.
-They may also be used to generate anonymized, aggregated user statistics.
+support. They may also be used to generate anonymized, aggregated user statistics.
 
 ### Who has access
 
-sfan5 runs the server list and has access to the logs. Logs with personal
-information removed may be shared with others to aid with debugging or
-development.
+sfan5 runs the server list and has access to the logs. Logs may be shared with
+others to aid with debugging, user support, or combating abuse.
 
 ### Period of retention
 
@@ -76,7 +74,6 @@ Logged HTTP requests are stored for up to 3 months.
 ### Location
 
 The server list is currently located in the Netherlands.
-By using this service, you give permission for the data to be moved as needed.
 
 
 ## Browsing Online Content (ContentDB)
@@ -93,7 +90,7 @@ The following information will be transferred or included:
 * IP address
 * Page URL
 * Minetest version
-* Platform, OS, device, etc
+* Platform and Operating System
 
 ### How it is used
 
@@ -111,19 +108,18 @@ is deleted regularly.
 
 ### Who has access
 
-rubenwardy runs ContentDB and has access to the logs. Logs with personal
-information removed may be shared with others to aid with debugging or
-development.
+rubenwardy runs ContentDB and has access to the logs. Logs may be shared with
+others to aid with debugging, user support, or combating abuse.
 
 ### Period of retention
 
-Logged HTTP requests are stored using log rotation, meaning that any requests
-will be forgotten within a few weeks.
+Logged HTTP requests are automatically deleted within 2 weeks.
 
 ### Location
 
-ContentDB is currently located in Germany.
-By using this service, you give permission for the data to be moved as needed.
+ContentDB is currently located in Germany and backups are stored within the
+United Kingdom and/or EU. By using this service, you give permission for the
+data to be moved within the United Kingdom and/or EU.
 
 ### Removal requests
 
@@ -140,7 +136,7 @@ included:
 
 * IP address
 * Minetest version
-* Platform, OS, device, etc
+* Platform and Operating System
 
 ### How it is used
 
