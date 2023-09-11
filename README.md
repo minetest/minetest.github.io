@@ -21,6 +21,8 @@ This site uses the [Jekyll](https://jekyllrb.com) static site generator.
 - Use `bundle exec jekyll serve` to automatically build the site
   and serve it locally.
 
+You can also use the provided [Dev Container](https://containers.dev/) configuration to make it easier.
+
 ### Browser support
 
 When working on new features, keep in mind this website only supports
