@@ -1,85 +1,189 @@
 why:
-- title: Free of Charge
-  para:  Minetest is <a href="/get-involved/">developed</a> by an
-         international network of <a href="/credits/">volunteer developers</a>.
-         You don't have to pay a license fee.
+- title: Free & Open Source
+  para: >-
+    The Minetest Engine is [developed](/get-involved/) by an independent
+    community of [volunteer developers](/credits/). It is provided for
+    everyone to use, modify, and redistribute freely.
 
-- title: Easy Scripting
-  para: Minetest is not a game itself, but instead provides a Lua API which is used to create games and mods.
-        This makes creation and customisation super easy.
+- title: Modular & Customizable
+  para: >-
+    Access [a library of 2000+ free and open source community developed mods](https://content.minetest.net/)
+    to customize your EDU environment, and an accessible scripting system for
+    you and your students to
+    [create your own](https://rubenwardy.com/minetest_modding_book/)!
 
-- title: Customisable without Limits
-  para: You are not restricted by any EULA, and have full access to the source code.
-        Minetest is available under the LGPLv2.1+ license.
-
-- title: Runs well on old hardware
-  para: Minetest is written in a computer language that makes more efficient use of hardware,
-        allowing more schools to be able to experience interactive virtual learning.
-
-- title: Independent
-  para: Minetest is not associated with any company or commercial entity, which can make it
-        more suitable for adoption in organisations where this is a problem.
-
-- title: Friendly Community
-  para: You can find help with any problems on our <a href="/get-involved/">forums or IRC channels.</a>
+- title: Low-spec & Cross-platform
+  para: >-
+    Minetest has low system requirements, is compatible with previous
+    generations of hardware, and allows crossplay from any supported device.
 
 
-featured:
-- title: Framinetest
-  author: Framasoft
-  lang: fr
-  img: framinetest.png
-  para: An educational server, with geology, biology, and historical reconstruction to imagine your world!
-  url: https://framinetest.org
+projects_map: "//umap.openstreetmap.fr/en/map/minetest-projects_893367?scaleControl=false&amp;miniMap=false&amp;scrollWheelZoom=false&amp;zoomControl=true&amp;editMode=disabled&amp;moreControl=true&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=true&amp;onLoadPanel=databrowser&amp;captionBar=false&amp;captionMenus=true"
 
-- title: QiskitBlocks
-  author: James Weaver
-  img: qiskitblocks.png
-  para: Teaching Quantum Computing using Qiskit in a block world.
-  url: https://content.minetest.net/packages/JavaFXpert/qiskitblocks/
+projects:
 
-- title: Craft the Web
-  author: CERN
-  tag: Unreleased
-  img: ctw.png
-  para: Learn what makes the Web function, and about the ideas and major inventions that paved its creation.
-  url: https://forum.minetest.net/viewtopic.php?t=22871
+- title: Minestory
+  author: académie de Dijon – Julien Crémoux
+  tag: School – Heritage Sites
+  country: fr
+  img: minestory.webp
+  alt: >-
+    On the left, a voxel reconstruction of Notre Dame. On the right, a lecture
+    theatre full of school pupils.
+  para: >-
+    Since 2019, more than 600 primary school students from 30 classes in 3
+    different countries have replicated heritage sites (like Notre-Dame de
+    Paris, the medieval Louvre castle or the Besançon citadel), placed them on
+    an interactive timeline and gave tours and presentations in the virtual
+    world.
+  url: http://minetest.wp.ac-dijon.fr/minestory-frise-immersive-de-sites-du-patrimoine-architectural/
+
+- title: Minetest Classroom
+  author: University of British Columbia – Paul Pickell
+  tag: University – Digital Twin
+  country: ca
+  img: minetest_classroom.webp
+  alt: >-
+    Video game screenshot. 7 natural stone pillars rise from the banks of
+    multiple rivers joining together.
+  para: >-
+    A project funded by the University of British Columbia around the use of
+    Minetest as a learning tool and for the production of digital twins of
+    natural and human built environments. It has been used to organize virtual
+    field trips in the context of Covid 19.
+  url: https://eml.ubc.ca/projects/gamifying-forestry/
+
+- title: Permis de déconstruire
+  author: Praticable
+  tag: School – Artistic Residency
+  country: fr
+  img: permisdedeconstruire.webp
+  alt: >-
+    Stylistic 3d voxel render of a school campus. Several eight story buildings
+    surround a quad with a large screen.
+  para: >-
+    Between November 2021 and June 2022, secondary school students from
+    Aulney-sous-Bois in France have reinvented their neighborhood with Minetest.
+    This project, coordinated by the IRI foundation and the teachers, allowed
+    the students to explore the digital practice of cooperative and contributive
+    construction. The projects created emphasized well-being and the
+    neighborhood's conviviality.
+  url: https://praticable.fr/productions/permis-de-deconstruire
+
+- title: UNEJ
+  author: Institut de Recherche et d'Innovation
+  tag: School – Urban Planning
+  country: fr
+  img: unej.webp
+  alt: >-
+    Photo of two women pointing at an Augmented Reality voxel building.
+  para: >-
+    The UNEJ project (*Urbanités Numériques En Jeux*) is a 4 years project where
+    teachers and students discover about urban planning while building concrete
+    proposals for their neighborhood's development with the help of
+    professionals from the sector. It is done in connection with the urban
+    transformations carried out for the 2024 Olympics.
+  url: https://tac93.fr/capacitation/unej
+
+- title: Maubeuge en Cubes
+  author: Thomate & Lemente
+  tag: Citizen Participation
+  country: fr
+  img: maubeuge.webp
+  alt: >-
+    On the left, pupils playing Minetest on laptops.
+    On the right, a voxel reconstruction of a city.
+  para: >-
+    A Workshop for the city of Maubeuge in France where groups of young citizens
+    between 10 and 16 years old shared ideas to improve their neighborhood. They
+    then built them in an in-game map of their city, allowing urban planners to
+    see what young people wanted for their local area and discuss current issues
+    with them.
+  url: https://agglo-maubeugevaldesambre.fr/wp-content/uploads/2023/02/Journal-du-Renouvellement-Urbain-7-Decembre-2022-Final-numerique.pdf
+
+- title: Pirate Cove
+  author: Monique Franzsen
+  tag: School – ICT – Research
+  country: za
+  img: pirate_cove.webp
+  alt: >-
+    Video game screenshot of a collection of pirates.
+  para: >-
+    A 9 week project with two classes of Grade 3 students. Aside from learning
+    how to play the game together and various ICT skills (screenshots, image
+    manipulation and importing), I wanted my students to research, plan and
+    design their building project and reflect on the process.
+  url: https://teachersqueaks.blogspot.com/2017/10/pirate-cove-part-1-digital-project.html
 
 
 resources:
 
-- title: BLOCKALOT
-  author: Landesmedienzentrum Baden-Württemberg
-  lang: de
-  img: imvec.png
-  para: >
+- title: Build Block Worlds with Minetest
+  author: Miguel Guhlin
+  tag: Guide
+  para: >-
+    An article explaining why you should use Minetest for education, and a guide
+    in doing so.
+  url: https://blog.tcea.org/build-block-worlds-with-minetest/
+
+- title: Mining for Education
+  author: Paul Brown, OS Mag
+  tag: Guide
+  para: >-
+    Another article explaining why you should use Minetest for education, and a guide
+    in doing so.
+  url: https://www.ocsmag.com/mining-for-education/
+
+- title: Learning with Minetest
+  author: Teacher Squeaks
+  tag: Guide – post-mortem
+  para: >-
+    A 3-part post-mortem based on the author's experience of using Minetest in a
+    pre-school.
+  url: http://teachersqueaks.blogspot.co.za/2016/08/minewhat-rolling-out-minetest-in-pre.html
+
+- title: Minetest Wiki (Edu page)
+  author: Minetest community
+  tag: Guides
+  para: >-
+    A trove of information, in multiple languages, with a space dedicated to
+    education. Looking for more contributions!
+  url: https://wiki.minetest.net/MinetestEDU
+
+- title: ContentDB
+  author: Minetest community
+  tag: To find Minetest mods
+  para: >-
+    A database where modders can submit their mods, games, and texture packs to
+    make them easily accessible. Includes features such as a tag system,
+    reviews, and more.
+  url:  https://content.minetest.net/packages/?tag=education
+
+- title: BLOCKALOT Server Hosting
+  author: Landesmedienzentrum Baden-Württemberg (LMZ)
+  tag: To host servers
+  para: >-
     A dashboard to create worlds for future-oriented learning without hosting
     servers. Comes with support (in English/French/German), a wiki and
     workshops. It's currently free to use.
   url: https://www.blockalot.de/
 
-- title: Edu Wiki
-  classes: is-primary
-  author: Various
-  para: There's a section of our wiki dedicated for education-related help.
-  url: https://wiki.minetest.net/MinetestEDU
+- title: Block exchange
+  author: BuckarooBanzai
+  tag: To share builds
+  para: >-
+    A website and mod that allows you to import or share Minetest constructions
+    on an online library.
+  url: https://blockexchange.minetest.ch/
 
-- title: List of Mods for Education
-  author: Various
-  para: We have a large collection of educational mods, all of which are free and open source.
-  url: https://content.minetest.net/packages/?tag=education
+- title: Create/host a server (Wiki)
+  author: Minetest community
+  tag: To host a server by yourself
+  para: The basics to host your multiplayer world locally or online.
+  url: https://wiki.minetest.net/Setting_up_a_server
 
 - title: Minetest Modding Book
   author: rubenwardy
+  tag: To learn how to make mods
   para: Learn how to use Minetest's Lua API to create mods and games.
   url: https://rubenwardy.com/minetest_modding_book/
-
-- title: Mining for Education
-  author: Paul Brown, OS Mag
-  para: An article explaining why you should use Minetest for education, and a guide in doing so.
-  url: https://www.ocsmag.com/mining-for-education/
-
-- title: Learning with Minetest
-  author: Teacher Squeaks
-  para: A 3-part post-mortem based on the author's experience of using Minetest in a pre-school.
-  url: http://teachersqueaks.blogspot.co.za/2016/08/minewhat-rolling-out-minetest-in-pre.html
