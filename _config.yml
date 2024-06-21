@@ -4,6 +4,8 @@ plugins:
   - jekyll-sitemap
 sass:
   style: compressed
+include:
+  - .well-known
 exclude:
   # `vendor/` is excluded because of <https://github.com/jekyll/jekyll/issues/3330>
   - vendor/
