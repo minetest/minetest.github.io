@@ -17,7 +17,7 @@ Minetest may connect to the following services during its operation:
 
 * The main website (www.minetest.net): used to get the most recent version
 * The server list: used to load the server list in "Play Online"
-* ContentDB: used to power the Browse Online Content dialog
+* ContentDB: used to install/update content in the main menu
 * Game servers: third-party servers when playing online
 
 Note: this policy only applies to the Minetest application, accessing the
@@ -31,7 +31,7 @@ mentioned services directly using a web browser is not covered.
   - [Who has access](#who-has-access)
   - [Period of retention](#period-of-retention)
   - [Location](#location)
-- [Browsing Online Content (ContentDB)](#browsing-online-content-contentdb)
+- [ContentDB](#contentdb)
   - [Information collected](#information-collected-1)
   - [How it is used](#how-it-is-used-1)
   - [Who has access](#who-has-access-1)
@@ -76,7 +76,7 @@ Logged HTTP requests are stored for up to 3 months.
 The server list is currently located in the Netherlands.
 
 
-## Browsing Online Content (ContentDB)
+## ContentDB
 
 You can find more information on
 [ContentDB's privacy policy](https://content.minetest.net/privacy_policy/).
