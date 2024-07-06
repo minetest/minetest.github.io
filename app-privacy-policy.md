@@ -93,6 +93,12 @@ transferred or included:
 * Minetest version
 * Platform and Operating System
 
+for example:
+
+```
+11.22.33.44 content.minetest.net - [06/July/2024:10:05:00 +0200] "GET /packages/Wuzzy/glitch/releases/18414/download/?reason=new HTTP/2.0" 302 233 "-" "Minetest/5.8.0 (Windows/10.0.19041 x86_64)"
+```
+
 ### How it is used
 
 HTTP requests are logged to aid with debugging, development, and aggregated
