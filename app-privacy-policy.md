@@ -26,21 +26,21 @@ mentioned services directly using a web browser is not covered.
 ### Table of contents
 
 - [Loading server list](#loading-server-list)
-	- [Information collected](#information-collected)
-	- [How it is used](#how-it-is-used)
-	- [Who has access](#who-has-access)
-	- [Period of retention](#period-of-retention)
-	- [Location](#location)
+  - [Information collected](#information-collected)
+  - [How it is used](#how-it-is-used)
+  - [Who has access](#who-has-access)
+  - [Period of retention](#period-of-retention)
+  - [Location](#location)
 - [Browsing Online Content (ContentDB)](#browsing-online-content-contentdb)
-	- [Information collected](#information-collected-1)
-	- [How it is used](#how-it-is-used-1)
-	- [Who has access](#who-has-access-1)
-	- [Period of retention](#period-of-retention-1)
-	- [Location](#location-1)
-	- [Removal requests](#removal-requests)
+  - [Information collected](#information-collected-1)
+  - [How it is used](#how-it-is-used-1)
+  - [Who has access](#who-has-access-1)
+  - [Period of retention](#period-of-retention-1)
+  - [Location](#location-1)
+  - [Removal requests](#removal-requests)
 - [Version checking](#version-checking)
-	- [Information collected](#information-collected-2)
-	- [How it is used](#how-it-is-used-2)
+  - [Information collected](#information-collected-2)
+  - [How it is used](#how-it-is-used-2)
 - [Online play](#online-play)
 - [Third parties](#third-parties)
 - [Future changes to privacy policy](#future-changes-to-privacy-policy)
@@ -83,9 +83,10 @@ You can find more information on
 
 ### Information collected
 
-Requests to [ContentDB](https://content.minetest.net) will be made when using
-the ContentDB dialog found at Content > Browse online content.
-The following information will be transferred or included:
+Requests to [ContentDB](https://content.minetest.net) will be made in the main
+menu when using the ContentDB feature. This includes checking for updates then
+you have packages from ContentDB installed. The following information will be
+transferred or included:
 
 * IP address
 * Page URL
