@@ -84,7 +84,7 @@ You can find more information on
 ### Information collected
 
 Requests to [ContentDB](https://content.minetest.net) will be made in the main
-menu when using the ContentDB feature. This includes checking for updates then
+menu when using the ContentDB feature. This includes checking for updates when
 you have packages from ContentDB installed. The following information will be
 transferred or included:
 
