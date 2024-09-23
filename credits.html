@@ -27,25 +27,13 @@ redirect_from:
         </p>
 
         <h3>Active Core Developers</h3>
-        <ul>
-          {% for x in site.data.credits.core_developers %}
-          <li>{{ x }}</li>
-          {% endfor %}
-        </ul>
+        {% include credits_list.html people=site.data.credits.core_developers %}
 
         <h3>Active Core Team Members</h3>
-        <ul>
-          {% for x in site.data.credits.core_team %}
-          <li>{{ x }}</li>
-          {% endfor %}
-        </ul>
+        {% include credits_list.html people=site.data.credits.core_team %}
 
         <h3>Previous Core Developers</h3>
-        <ul>
-          {% for x in site.data.credits.previous_core_developers %}
-          <li>{{ x }}</li>
-          {% endfor %}
-        </ul>
+        {% include credits_list.html people=site.data.credits.previous_core_developers %}
 
         <hr>
         <h2>Contributors</h2>
@@ -57,18 +45,10 @@ redirect_from:
         </p>
 
         <h3>Active</h3>
-        <ul>
-          {% for x in site.data.credits.contributors %}
-          <li>{{ x }}</li>
-          {% endfor %}
-        </ul>
+        {% include credits_list.html people=site.data.credits.contributors %}
 
         <h3>Previous</h3>
-        <ul>
-          {% for x in site.data.credits.previous_contributors %}
-          <li>{{ x }}</li>
-          {% endfor %}
-        </ul>
+        {% include credits_list.html people=site.data.credits.previous_contributors %}
 
         <p class="has-text-weight-bold">
           More information can be found at
