@@ -3,6 +3,7 @@ gem 'jekyll'
 gem 'jekyll-redirect-from'
 gem 'jekyll-sitemap'
 gem 'html-proofer', '~> 3.19'
+gem 'json'
 
 # Newer versions have limited libc support
 gem "jekyll-sass-converter", "~> 2.0"

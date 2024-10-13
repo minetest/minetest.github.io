@@ -39,3 +39,12 @@
   margin-top: 2.25rem;
   margin-bottom: 0.9rem;
 }
+
+dl.is-horizontal {
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+  dt, dd {
+    display: block;
+  }
+}

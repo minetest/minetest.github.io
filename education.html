@@ -4,92 +4,112 @@ description: Reasons and resources for using Minetest in education
 layout: default
 ---
 
-<h1 class="title main-title">Minetest for Education</h1>
+<h1 class="title main-title">{{ page.title }}</h1>
 
 <section class="section">
-	<div class="container">
-		<h2 id="why" class="title">Why Minetest?</h2>
-		<div class="columns is-multiline">
-			{% for point in site.data.edu.why %}
-				<div class="column is-one-third">
-					<h3 class="title is-4">{{ point.title }}</h3>
-					<p>
-						{{ point.para }}
-					</p>
-				</div>
-			{% endfor %}
-		</div>
+  <div class="container">
+    <h2 id="why" class="title">Why Minetest?</h2>
+    <div class="columns is-multiline">
+      {% for point in site.data.edu.why %}
+        <div class="column is-one-third">
+          <h3 class="title is-4">{{ point.title }}</h3>
+          <p>
+            {{ point.para | markdownify }}
+          </p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 
-		<p class="has-text-centered footnote">
-			<small>
-				The above is based on the
-				<a href="https://web.archive.org/web/20221218200032/https://twitter.com/MinetestProject/status/1147812428647936001">responses</a>
-				of educators using Minetest.
-			</small>
-		</p>
-	</div>
+<section id="projects" class="section card-container">
+  <div class="container">
+    <h2 class="title">Projects</h2>
+
+    <article id="map" class="card is-clipped mb-5">
+      <h3 class="is-sr-only">Projects map</h3>
+      <iframe width="100%" height="450px" frameborder="0" allowfullscreen=""
+        allow="geolocation" class="is-block" title="Projects map"
+        src="{{ site.data.edu.projects_map }}"></iframe>
+    </article>
+
+    <div class="columns is-multiline">
+      {% for point in site.data.edu.projects %}
+        {% include edu_card.html item=point %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section card-container">
+  <div class="container">
+    <h2 id="resources" class="title is-3">Resources</h2>
+    <div class="columns is-multiline">
+      {% for point in site.data.edu.resources %}
+        {% include edu_card.html item=point %}
+      {% endfor %}
+    </div>
+  </div>
 </section>
 
 
-<section id="projects" class="section" style="background-color: #f0f0f0;">
-	<div class="container">
-		<h2 class="title">Projects</h2>
-
-		<div class="columns is-multiline">
-			{% for point in site.data.edu.featured %}
-				<a class="column is-one-third hover-enlarge" href="{{ point.url }}">
-					<div class="card">
-						<div class="card-image">
-							<figure class="image is-16by9">
-								<img src="/media/edu/{{ point.img }}" style="object-fit: cover;" alt="screenshot">
-							</figure>
-						</div>
-						<div class="card-content">
-							<h2 class="title is-4">{{ point.title }}
-								{% if point.tag %}
-									<span class="tag is-rounded is-warning">{{ point.tag }}</span>
-								{% endif %}
-								{% for lang in point.lang %}
-									<img class="is-pulled-right" src="/assets/icons/lang-{{ lang }}.png" alt="{{ lang }}">
-								{% endfor %}
-							</h2>
-							<h6 class="subtitle is-6">{{ point.author }}</h6>
-							<p>
-								{{ point.para }}
-							</p>
-						</div>
-					</div>
-				</a>
-			{% endfor %}
-		</div>
-	</div>
+<section class="section">
+  <div class="container">
+    <h2 id="get-involved" class="title is-3">Get Involved</h2>
+    <div class="columns">
+      <article class="column is-half">
+        <h2 class="title is-4">Minetest community</h2>
+        <p class="my-4">
+          Get involved with the wider Minetest community by joining one
+          of the official social platforms.
+        </p>
+        <p>
+          <a class="button is-primary" href="/get-involved/">
+            Get Involved
+          </a>
+        </p>
+      </article>
+      <article class="column is-half">
+        <h2 class="title is-4">Minetest Edu Discord (unofficial)</h2>
+        <p class="my-4">
+          There's an educator-led Discord for the discussion of Minetest in
+          education.
+        </p>
+        <p>
+          <a class="button is-primary" href="https://discord.gg/hUs9xT634S">
+            Join the Discord
+          </a>
+        </p>
+      </article>
+    </div>
+  </div>
 </section>
 
 <section class="section">
-	<div class="container">
-		<h2 id="resources" class="title">Resources</h2>
+  <div class="container">
+    <h2 id="leaflet" class="title">Leaflet</h2>
+    <p class="my-4">
+      Need a print version of this page? See the "Minetest in Education"
+      leaflet.
+    </p>
+    <p>
+      <a class="button is-primary"
+          href="https://gitlab.com/rubenwardy/fosdem24/-/tree/main/edu_leaflet?ref_type=heads">
+        "Minetest in Education" leaflet
+      </a>
+    </p>
+  </div>
+</section>
 
-		<div class="columns is-multiline">
-			{% for point in site.data.edu.resources %}
-				<a class="column is-one-third hover-enlarge" href="{{ point.url }}">
-					<div class="card {{ point.classes }}">
-						<div class="card-content">
-							<h2 class="title is-4">{{ point.title }}</h2>
-							<h6 class="subtitle is-6">{{ point.author }}</h6>
-							<p>
-								{{ point.para }}
-							</p>
-						</div>
-					</div>
-				</a>
-			{% endfor %}
-		</div>
-
-		<div class="notification">
-			<b>Your project here!</b>
-			Contribute back to the community by making your learning resources publicly available.
-			Then, <a href="https://github.com/minetest/minetest.github.io/issues/new">create an issue</a> or
-			<a href="https://rubenwardy.com/contact/">contact rubenwardy</a>.
-		</div>
-	</div>
+<section class="section">
+  <div class="container">
+    <h2 id="resources" class="title">Working on an edu project?</h2>
+    <p>
+      Contribute back to the community by writing about your project
+      and/or making your learning resources publicly available. Then,
+      <a href="https://github.com/minetest/minetest.github.io/issues/new">
+        create an issue</a> or
+      <a href="https://rubenwardy.com/contact/">contact rubenwardy</a>.
+    </p>
+  </div>
 </section>

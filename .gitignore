@@ -5,3 +5,4 @@ _site/
 node_modules/
 vendor/
 .jekyll-metadata
+.idea
