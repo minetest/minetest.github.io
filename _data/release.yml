@@ -4,3 +4,5 @@ latest:
   date: "2024-09-15"
   protocol_version: 45
   url: "https://www.minetest.net/downloads/"
+  # Header for the latest changelog entry on the Wiki
+  changelog_header: "5.9.0_.E2.86.92_5.9.1"
