@@ -1,7 +1,7 @@
 why:
 - title: Free & Open Source
   para: >-
-    The Minetest Engine is [developed](/get-involved/) by an independent
+    The Luanti Engine is [developed](/get-involved/) by an independent
     community of [volunteer developers](/credits/). It is provided for
     everyone to use, modify, and redistribute freely.
 
@@ -14,7 +14,7 @@ why:
 
 - title: Low-spec & Cross-platform
   para: >-
-    Minetest has low system requirements, is compatible with previous
+    Luanti has low system requirements, is compatible with previous
     generations of hardware, and allows crossplay from any supported device.
 
 
@@ -48,7 +48,7 @@ projects:
     multiple rivers joining together.
   para: >-
     A project funded by the University of British Columbia around the use of
-    Minetest as a learning tool and for the production of digital twins of
+    Luanti as a learning tool and for the production of digital twins of
     natural and human built environments. It has been used to organize virtual
     field trips in the context of Covid 19.
   url: https://eml.ubc.ca/projects/gamifying-forestry/
@@ -63,7 +63,7 @@ projects:
     surround a quad with a large screen.
   para: >-
     Between November 2021 and June 2022, secondary school students from
-    Aulney-sous-Bois in France have reinvented their neighborhood with Minetest.
+    Aulney-sous-Bois in France have reinvented their neighborhood with Luanti.
     This project, coordinated by the IRI foundation and the teachers, allowed
     the students to explore the digital practice of cooperative and contributive
     construction. The projects created emphasized well-being and the
@@ -91,7 +91,7 @@ projects:
   country: fr
   img: maubeuge.webp
   alt: >-
-    On the left, pupils playing Minetest on laptops.
+    On the left, pupils playing Luanti on laptops.
     On the right, a voxel reconstruction of a city.
   para: >-
     A Workshop for the city of Maubeuge in France where groups of young citizens
@@ -118,11 +118,11 @@ projects:
 
 resources:
 
-- title: Build Block Worlds with Minetest
+- title: Build Block Worlds with Luanti
   author: Miguel Guhlin
   tag: Guide
   para: >-
-    An article explaining why you should use Minetest for education, and a guide
+    An article explaining why you should use Luanti for education, and a guide
     in doing so.
   url: https://blog.tcea.org/build-block-worlds-with-minetest/
 
@@ -130,7 +130,7 @@ resources:
   author: Paul Brown, OS Mag
   tag: Guide
   para: >-
-    Another article explaining why you should use Minetest for education, and a guide
+    Another article explaining why you should use Luanti for education, and a guide
     in doing so.
   url: https://www.ocsmag.com/mining-for-education/
 
@@ -142,8 +142,8 @@ resources:
     pre-school.
   url: http://teachersqueaks.blogspot.co.za/2016/08/minewhat-rolling-out-minetest-in-pre.html
 
-- title: Minetest Wiki (Edu page)
-  author: Minetest community
+- title: Luanti Wiki (Edu page)
+  author: Luanti community
   tag: Guides
   para: >-
     A trove of information, in multiple languages, with a space dedicated to
@@ -151,8 +151,8 @@ resources:
   url: https://wiki.minetest.net/MinetestEDU
 
 - title: ContentDB
-  author: Minetest community
-  tag: To find Minetest mods
+  author: Luanti community
+  tag: To find Luanti mods
   para: >-
     A database where modders can submit their mods, games, and texture packs to
     make them easily accessible. Includes features such as a tag system,
@@ -172,18 +172,18 @@ resources:
   author: BuckarooBanzai
   tag: To share builds
   para: >-
-    A website and mod that allows you to import or share Minetest constructions
+    A website and mod that allows you to import or share Luanti constructions
     on an online library.
   url: https://blockexchange.minetest.ch/
 
 - title: Create/host a server (Wiki)
-  author: Minetest community
+  author: Luanti community
   tag: To host a server by yourself
   para: The basics to host your multiplayer world locally or online.
   url: https://wiki.minetest.net/Setting_up_a_server
 
-- title: Minetest Modding Book
+- title: Luanti Modding Book
   author: rubenwardy
   tag: To learn how to make mods
-  para: Learn how to use Minetest's Lua API to create mods and games.
+  para: Learn how to use Luanti's Lua API to create mods and games.
   url: https://rubenwardy.com/minetest_modding_book/

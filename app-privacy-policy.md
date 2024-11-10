@@ -1,6 +1,6 @@
 ---
-title: Minetest Privacy Policy
-description: Privacy policy for the Minetest application.
+title: Luanti Privacy Policy
+description: Privacy policy for the Luanti application.
 small: |
   Last updated: 2024-08-17
   (<a href="https://github.com/minetest/minetest.github.io/commits/master/app-privacy-policy.md">View updates</a>)
@@ -13,14 +13,14 @@ layout: page_subtitle
 	}
 </style>
 
-Minetest may connect to the following services during its operation:
+Luanti may connect to the following services during its operation:
 
 * The main website (www.minetest.net): used to get the most recent version
 * The server list: used to load the server list in "Play Online"
 * ContentDB: used to install/update content in the main menu
 * Game servers: third-party servers when playing online
 
-Note: this policy only applies to the Minetest application, accessing the
+Note: this policy only applies to the Luanti application, accessing the
 mentioned services directly using a web browser is not covered.
 
 ### Table of contents
@@ -50,11 +50,11 @@ mentioned services directly using a web browser is not covered.
 
 ### Information collected
 
-When you open the Play Online tab, Minetest will request the server list.
+When you open the Play Online tab, Luanti will request the server list.
 The following information will be transferred or included:
 
 * IP address
-* Minetest version
+* Luanti version
 * Platform and Operating System
 
 ### How it is used
@@ -90,13 +90,13 @@ transferred or included:
 
 * IP address
 * Page URL
-* Minetest version
+* Luanti version
 * Platform and Operating System
 
 for example:
 
 ```
-11.22.33.44 content.minetest.net - [06/July/2024:10:05:00 +0200] "GET /packages/Wuzzy/glitch/releases/18414/download/?reason=new HTTP/2.0" 302 233 "-" "Minetest/5.8.0 (Windows/10.0.19041 x86_64)"
+11.22.33.44 content.minetest.net - [06/July/2024:10:05:00 +0200] "GET /packages/Wuzzy/glitch/releases/18414/download/?reason=new HTTP/2.0" 302 233 "-" "Luanti/5.8.0 (Windows/10.0.19041 x86_64)"
 ```
 
 ### How it is used
@@ -139,12 +139,12 @@ See [ContentDB's privacy policy](https://content.minetest.net/privacy_policy/#re
 
 ### Information collected
 
-When you open Minetest, it may contact www.minetest.net to fetch information
+When you open Luanti, it may contact www.minetest.net to fetch information
 about the most recent version. The following information will be transferred or
 included:
 
 * IP address
-* Minetest version
+* Luanti version
 * Platform and Operating System
 
 ### How it is used
@@ -161,8 +161,8 @@ See [About GitHub Pages > Data collection](https://docs.github.com/en/pages/gett
 
 ## Online play
 
-Minetest allows you to play online on multiplayer game servers. Please note that
-game servers are third-party, Minetest acts like a web browser connecting to a
+Luanti allows you to play online on multiplayer game servers. Please note that
+game servers are third-party, Luanti acts like a web browser connecting to a
 website. Therefore, please refer to the game server's privacy policy.
 
 
@@ -174,4 +174,4 @@ We do not share any personal information with third parties.
 ## Future changes to privacy policy
 
 We will alert any future changes to the privacy policy via posts on the
-Minetest forum and by the last updated date at the top of this page.
+Luanti forum and by the last updated date at the top of this page.

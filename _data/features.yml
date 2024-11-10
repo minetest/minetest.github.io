@@ -40,7 +40,7 @@ developers:
 
     - title: Modding API
       description: >
-        Use the same Lua API to make mods for any Minetest-based game.
+        Use the same Lua API to make mods for any Luanti-based game.
         Publish your mods on [ContentDB](https://content.minetest.net),
         and contribute to others' mods.
 
